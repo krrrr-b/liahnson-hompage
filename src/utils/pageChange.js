@@ -15,7 +15,7 @@ export function pageChange(langParam = "", pathParam = "") {
     if (url !== "") {
         const redirectUrl = "?" + url;
         console.log(redirectUrl);
-        // window.parent.location.href = 'http://www.liahnson.com/test.html' + redirectUrl;
+        window.parent.location.href = 'http://www.liahnson.com/test.html' + redirectUrl;
     }
 
     function getUrlParams() {
