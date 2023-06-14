@@ -11,7 +11,7 @@ export function pageChange(langParam = "", pathParam = "") {
     lang = lang.replace("ko-KR", "ko").replace("en-US", "en");
 
     if (lang !== "" && lang !== undefined) {
-        url += (url != "" ? ("&lang=" + lang) : "?lang=" + lang);
+        url += (url != "" ? ("?lang=" + lang) : "lang=" + lang);
     }
 
     if (url != "") {
