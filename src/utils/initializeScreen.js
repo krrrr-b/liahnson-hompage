@@ -18,7 +18,10 @@ export function initializeScreen() {
     }
 
     if (url !== "") {
-        // window.parent.location.href = 'http://www.liahnson.com/test.html?' + url;
+        const redirectUrl = "?" + url;
+        if (redirectUrl !== window.parent.location.search) {
+            window.parent.location.href = 'http://www.liahnson.com/test.html' + redirectUrl;
+        }
     }
     
     function getUrlParams() {     
