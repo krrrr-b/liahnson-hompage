@@ -10,26 +10,19 @@ export function pageChange(langParam = "", pathParam = "") {
     }
 
     if (lang !== "" && lang !== undefined) {
-        url += (url != "" ? ("&lang=" + lang) : "lang=" + lang);
+        url += (url != "" ? ("?lang=" + lang) : "lang=" + lang);
     }
 
     if (url != "") {
-        const redirectUrl = "?" + url;
-        if (currentUrl != redirectUrl) {
-            setCookie("page", redirectUrl, 1);
-            window.parent.postMessage(redirectUrl, '*');
-        }
-        currentUrl = redirectUrl;
+        const redirectUrl = "/" + url;
+        setCookie("page", redirectUrl, 1);
+        window.parent.postMessage(redirectUrl, '*');
     } else if (url == "lang=ko") {
-        const redirectUrl = "?" + url;
-        if (currentUrl != redirectUrl) {
-            setCookie("page", redirectUrl, 1);
-            window.parent.postMessage(redirectUrl, '*');
-        }
-        currentUrl = redirectUrl;
+        const redirectUrl = "/" + url;
+        setCookie("page", redirectUrl, 1);
+        window.parent.postMessage(redirectUrl, '*');
     } else {
-        currentUrl = "/";
-        setCookie("page", "?", 1);
+        setCookie("page", "/", 1);
         window.parent.postMessage('/', '*');
     }
 
