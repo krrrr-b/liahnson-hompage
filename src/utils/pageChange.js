@@ -1,3 +1,4 @@
+let currentUrl = "";
 export function pageChange(langParam = "", pathParam = "") {
     const params = getUrlParams();
     const path = pathParam != "" ? pathParam.toLowerCase() : location.pathname.replace("/", "");
@@ -14,9 +15,19 @@ export function pageChange(langParam = "", pathParam = "") {
 
     if (url !== "") {
         const redirectUrl = "?" + url;
+        if (currentUrl == redirectUrl) {
+            return;
+        }
+
+        currentUrl = redirectUrl;
         console.log(redirectUrl);
         // window.parent.location.href = 'http://www.liahnson.com/test.html' + redirectUrl;
     } else {
+        if (currentUrl == url) {
+            return;
+        }
+
+        currentUrl = url;
         console.log(url);
         // window.parent.location.href = 'http://www.liahnson.com/test.html';
     }

@@ -61,7 +61,7 @@ export default function Header(): ReturnType<React.FunctionComponent> {
   const onClick = (e: React.MouseEvent, label: string = "") => {
     e.stopPropagation();
     setIsOpen(false);
-    pageChange("", label);
+    pageChange(i18n.language, label);
   };
 
   return (
@@ -183,7 +183,7 @@ const dropDownItems: MiniDropdownItemType[] = [
     onClick: () => {
       i18n.changeLanguage("ko");
       pageChange("ko");
-      // window.location.reload();
+      window.location.reload();
     },
     selected: i18n.language === "ko"
   },
@@ -192,7 +192,7 @@ const dropDownItems: MiniDropdownItemType[] = [
     onClick: () => {
       i18n.changeLanguage("en");
       pageChange("en");
-      // window.location.reload();
+      window.location.reload();
     },
     selected: i18n.language === "en"
   },

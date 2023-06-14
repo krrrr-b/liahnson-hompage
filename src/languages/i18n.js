@@ -8,10 +8,6 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 const params = getUrlParams();
 let lang = params['lang'];
 
-if (!(lang == "ko" || lang == "en")) {
-  lang = "en";
-}
-
 function getUrlParams() {     
   var params = {};  
   

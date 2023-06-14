@@ -3,6 +3,7 @@ import { Container, Inner } from 'components/shared';
 import i18n from "languages/i18n";
 
 export default function Terms(): ReturnType<React.FunctionComponent> {
+  console.log(i18n);
   const isKoKR = i18n.language === "ko";
 
   const koreanTerms = <S.DescriptionWrapper>
