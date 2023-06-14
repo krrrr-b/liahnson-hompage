@@ -1,24 +1,25 @@
-let currentUrl = "";
 export function pageChange(langParam = "", pathParam = "") {
     const params = getUrlParams();
-    const path = pathParam != "" ? pathParam.toLowerCase() : location.pathname.replace("/", "");
-    const lang = langParam !== "" ? langParam : params['lang'];
+    let path = pathParam != "" ? pathParam.toLowerCase() : location.pathname.replace("/", "");
+    let lang = langParam !== "" ? langParam : params['lang'];
 
     let url = "";
     if ((path !== "" && path !== "main") && path !== undefined) {
         url += path;
     }
 
-    if (lang !== "" && lang !== undefined) {
-        url += (url != "" ? ("?lang=" + lang) : "lang=" + lang);
-    }
+    // lang = lang.replace("ko-KR", "ko").replace("en-US", "en");
+
+    // if (lang !== "" && lang !== undefined) {
+    //     url += (url != "" ? ("&lang=" + lang) : "?lang=" + lang);
+    // }
 
     if (url != "") {
-        const redirectUrl = "/" + url;
+        const redirectUrl = "page=" + url;
         setCookie("page", redirectUrl, 1);
         window.parent.postMessage(redirectUrl, '*');
     } else if (url == "lang=ko") {
-        const redirectUrl = "/" + url;
+        const redirectUrl = "page=" + url;
         setCookie("page", redirectUrl, 1);
         window.parent.postMessage(redirectUrl, '*');
     } else {

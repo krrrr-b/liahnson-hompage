@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from 'styles/globalStyles';
 import Footer from 'components/domain/Footer';
@@ -20,6 +20,29 @@ import MediaQueryProvider from 'contexts/MediaQueryProvider';
 import './languages/i18n';
 
 function App() {
+  let page = location.search
+    .replace('page=', '/')
+    .replace('?', '');
+
+  if ((page != undefined && page.trim() != "") && location.pathname != page && page != '/') {
+    let pathList = new Array(
+      '/services',
+      '/clients',
+      '/experts',
+      '/careers',
+      '/about',
+      '/compliance',
+      '/compliance-additional',
+      '/cookie',
+      '/terms',
+      '/privacy'
+    );
+
+    if (pathList.includes(page)) {
+        location.replace(page);
+    }
+  }
+
   return (
     <MediaQueryProvider>
       <ThemeProvider theme={theme}>
