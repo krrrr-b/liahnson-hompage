@@ -18,7 +18,7 @@ export function initializeScreen() {
     }
 
     if (url !== "") {
-        window.parent.location.href = 'http://www.liahnson.com/test.html?' + url;
+        // window.parent.location.href = 'http://www.liahnson.com/test.html?' + url;
     }
     
     function getUrlParams() {     
