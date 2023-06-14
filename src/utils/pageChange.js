@@ -21,7 +21,7 @@ export function pageChange(langParam = "", pathParam = "") {
 
         currentUrl = redirectUrl;
         console.log(redirectUrl);
-        window.parent.location.href = 'http://www.liahnson.com/test.html' + redirectUrl;
+        window.parent.location.href = '/test.html' + redirectUrl;
     } else {
         if (currentUrl == url) {
             return;
@@ -29,7 +29,7 @@ export function pageChange(langParam = "", pathParam = "") {
 
         currentUrl = url;
         console.log(url);
-        window.parent.location.href = 'http://www.liahnson.com/test.html';
+        window.parent.location.href = '/';
     }
 
     function getUrlParams() {
