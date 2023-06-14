@@ -24,6 +24,7 @@ export default function Header(): ReturnType<React.FunctionComponent> {
   const navigate = useNavigate();
   const [theme, setTheme] = useState('dark');
   const [widths, setWidths] = useState<Array<string>>([]);
+  const [language, setLanguage] = useState<string>(i18n.language);
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);
   const location = useLocation();
   const { isTablet } = useContext(MediaQueryContext);
@@ -77,6 +78,29 @@ export default function Header(): ReturnType<React.FunctionComponent> {
       tabRefs.current.push(el);
     }
   };
+
+  const dropDownItems: MiniDropdownItemType[] = [
+    {
+      label: 'Kor',
+      onClick: () => {
+        i18n.changeLanguage("ko");
+        pageChange("ko");
+        setLanguage("ko");
+        // window.location.reload();
+      },
+      selected: language === "ko"
+    },
+    {
+      label: 'Eng',
+      onClick: () => {
+        i18n.changeLanguage("en");
+        pageChange("en");
+        setLanguage("en");
+        // window.location.reload();
+      },
+      selected: language === "en"
+    },
+  ];
 
   useEffect(() => {
     if (location.pathname === '/services' || location.pathname === '/clients') {
@@ -204,27 +228,6 @@ export default function Header(): ReturnType<React.FunctionComponent> {
     </S.Header>
   );
 }
-
-const dropDownItems: MiniDropdownItemType[] = [
-  {
-    label: 'Kor',
-    onClick: () => {
-      i18n.changeLanguage("ko");
-      pageChange("ko");
-      // window.location.reload();
-    },
-    selected: i18n.language === "ko"
-  },
-  {
-    label: 'Eng',
-    onClick: () => {
-      i18n.changeLanguage("en");
-      pageChange("en");
-      // window.location.reload();
-    },
-    selected: i18n.language === "en"
-  },
-];
 
 const navItems = [
   {

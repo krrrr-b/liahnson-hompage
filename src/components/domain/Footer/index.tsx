@@ -18,14 +18,17 @@ import { useTranslation } from "react-i18next";
 import i18n from "languages/i18n";
 import footerPageVideo1 from 'assets/images/footerPageVideo.mov';
 import footerPageVideo2 from 'assets/images/footerPageVideo_2.mov';
+import React, { useState } from 'react';
+import { pageChange } from "utils/pageChange";
 
 export default function Footer(): ReturnType<React.FunctionComponent> {
   const navigate = useNavigate();
   const { isMobile } = useContext(MediaQueryContext);
   const isMainPage = (location.pathname == '/') ? true : false;
   const { t } = useTranslation()
+  const [language, setLanguage] = useState<string>(i18n.language);
 
-  const isKorean = i18n.language === "ko";
+  const isKorean = language === "ko";
   const routeChange = (path: string) =>{
     navigate(path);
   }
@@ -37,6 +40,29 @@ export default function Footer(): ReturnType<React.FunctionComponent> {
   const onStopPropagation = (e: React.MouseEvent) => {
     e.stopPropagation();
   };
+
+  const dropDownItems: MiniDropdownItemType[] = [
+    {
+      label: 'Kor',
+      onClick: () => {
+        i18n.changeLanguage("ko");
+        pageChange("ko");
+        setLanguage("ko");
+        // window.location.reload();
+      }, 
+      selected: language === "ko"
+    },
+    {
+      label: 'Eng',
+      onClick: () => {
+        i18n.changeLanguage("en");
+        pageChange("en");
+        setLanguage("en");
+        // window.location.reload();
+      },
+      selected: language === "en",
+    },
+  ];
 
   return (
     <S.Footer>
@@ -188,22 +214,3 @@ export default function Footer(): ReturnType<React.FunctionComponent> {
     </S.Footer>
   );
 }
-
-const dropDownItems: MiniDropdownItemType[] = [
-  {
-    label: 'Kor',
-    onClick: () => {
-      i18n.changeLanguage("ko");
-      // window.location.reload();
-    }, 
-    selected: i18n.language === "ko"
-  },
-  {
-    label: 'Eng',
-    onClick: () => {
-      i18n.changeLanguage("en");
-      // window.location.reload();
-    },
-    selected: i18n.language === "en",
-  },
-];
