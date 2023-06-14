@@ -1,6 +1,6 @@
-export function pageChange(langParam = "") {
+export function pageChange(langParam = "", pathParam = "") {
     const params = getUrlParams();
-    const path = location.pathname.replace("/", "");
+    const path = pathParam != "" ? pathParam.toLowerCase() : location.pathname.replace("/", "");
     const lang = langParam !== "" ? langParam : params['lang'];
 
     let url = "";
@@ -12,7 +12,6 @@ export function pageChange(langParam = "") {
         url += (url != "" ? ("&lang=" + lang) : "lang=" + lang);
     }
 
-    console.log(url);
     if (url !== "" && window.parent.location.host == "liahnson.com") {
         const redirectUrl = "?" + url;
         window.parent.location.href = 'http://www.liahnson.com/test.html' + redirectUrl;

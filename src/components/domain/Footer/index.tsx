@@ -26,7 +26,7 @@ export default function Footer(): ReturnType<React.FunctionComponent> {
   const { t } = useTranslation()
 
   const isKorean = i18n.language === "ko";
-  const routeChange = (path: string) =>{ 
+  const routeChange = (path: string) =>{
     navigate(path);
   }
 

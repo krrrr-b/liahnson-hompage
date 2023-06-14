@@ -58,11 +58,10 @@ export default function Header(): ReturnType<React.FunctionComponent> {
     }
   }, [location.pathname]);
 
-  const onClick = (e: React.MouseEvent) => {
+  const onClick = (e: React.MouseEvent, label: string = "") => {
     e.stopPropagation();
-
-    pageChange();
     setIsOpen(false);
+    pageChange("", label);
   };
 
   return (
@@ -122,7 +121,7 @@ export default function Header(): ReturnType<React.FunctionComponent> {
                     className={({ isActive }) => (isActive ? 'active' : '')}
                     theme={theme}
                     aria-label={item.label}
-                    onClick={onClick}>
+                    onClick={(e) => onClick(e, item.label)}>
                     {item.label}
                   </S.LinkItem>
                 </S.NavListItem>
@@ -184,6 +183,7 @@ const dropDownItems: MiniDropdownItemType[] = [
     onClick: () => {
       i18n.changeLanguage("ko");
       pageChange("ko");
+      // window.location.reload();
     },
     selected: i18n.language === "ko"
   },
@@ -192,6 +192,7 @@ const dropDownItems: MiniDropdownItemType[] = [
     onClick: () => {
       i18n.changeLanguage("en");
       pageChange("en");
+      // window.location.reload();
     },
     selected: i18n.language === "en"
   },
