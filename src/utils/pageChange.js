@@ -12,7 +12,7 @@ export function pageChange(langParam = "", pathParam = "") {
         url += (url != "" ? ("&lang=" + lang) : "lang=" + lang);
     }
 
-    if (url !== "" && window.parent.location.host == "liahnson.com") {
+    if (url !== "") {
         const redirectUrl = "?" + url;
         console.log(redirectUrl);
         // window.parent.location.href = 'http://www.liahnson.com/test.html' + redirectUrl;
