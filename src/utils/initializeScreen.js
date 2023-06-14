@@ -17,11 +17,10 @@ export function initializeScreen() {
         url += (url != "" ? ("&lang=" + lang) : "lang=" + lang);
     }
 
-    console.log(url);
-    console.log(window.parent.location);
-
-    // window.parent.location = '/' + url;
-
+    if (url !== "") {
+        window.parent.location.href = 'http://www.liahnson.com/test.html?' + url;
+    }
+    
     function getUrlParams() {     
         var params = {};  
         location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, 
