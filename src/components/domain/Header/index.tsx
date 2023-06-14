@@ -70,7 +70,7 @@ export default function Header(): ReturnType<React.FunctionComponent> {
         <Inner>
           <S.Wrapper>
             <S.Left ref={dropdownRef}>
-              <S.LogoLink to='/' onClick={onClick}>
+              <S.LogoLink to='/'  onClick={(e) => onClick(e, "main")}>
                 {isTablet ? (
                   isOpen ? (
                     <img src={mobileLightLogo} alt='liahnson logo' />

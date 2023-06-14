@@ -13,7 +13,7 @@ export function pageChange(langParam = "", pathParam = "") {
         url += (url != "" ? ("&lang=" + lang) : "lang=" + lang);
     }
 
-    if (url !== "") {
+    if (url !== "" && url !== "main") {
         const redirectUrl = "?" + url;
         if (currentUrl == redirectUrl) {
             return;
