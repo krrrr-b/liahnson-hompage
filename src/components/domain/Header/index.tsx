@@ -47,8 +47,8 @@ export default function Header(): ReturnType<React.FunctionComponent> {
 
   useEffect(() => {
     let page = location.search
-    .replace('page=', '/')
-    .replace('?', '');
+      .replace('page=', '/')
+      .replace('?', '');
 
     if ((page != undefined && page.trim() != "") && location.pathname != page && page != '/') {
       let pathList = new Array(

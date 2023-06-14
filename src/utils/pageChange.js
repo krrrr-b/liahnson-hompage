@@ -8,11 +8,11 @@ export function pageChange(langParam = "", pathParam = "") {
         url += path;
     }
 
-    // lang = lang.replace("ko-KR", "ko").replace("en-US", "en");
+    lang = lang.replace("ko-KR", "ko").replace("en-US", "en");
 
-    // if (lang !== "" && lang !== undefined) {
-    //     url += (url != "" ? ("&lang=" + lang) : "?lang=" + lang);
-    // }
+    if (lang !== "" && lang !== undefined) {
+        url += (url != "" ? ("&lang=" + lang) : "?lang=" + lang);
+    }
 
     if (url != "") {
         const redirectUrl = "page=" + url;
@@ -28,7 +28,7 @@ export function pageChange(langParam = "", pathParam = "") {
     }
 
     function setCookie(cName, cValue, cDay) {
-        // console.log(cValue);
+        console.log(cValue);
 
         var expire = new Date();
         expire.setDate(expire.getDate() + cDay);
