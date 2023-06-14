@@ -13,13 +13,25 @@ export function pageChange(langParam = "", pathParam = "") {
         url += (url != "" ? ("&lang=" + lang) : "lang=" + lang);
     }
 
-    if (url != "" && url != "lang=ko") {
+    if (url != "") {
         const redirectUrl = "?" + url;
-        console.log(redirectUrl);
-        // window.parent.location.href = '/test.html' + redirectUrl;
+        setCookie("page", redirectUrl, 1);
+        window.parent.postMessage(redirectUrl, '*');
+    } else if (url == "lang=ko") {
+        const redirectUrl = "?" + url;
+        setCookie("page", redirectUrl, 1);
+        window.parent.postMessage(redirectUrl, '*');
     } else {
-        console.log(url);
-        // window.parent.location.href = "/";
+        setCookie("page", "/", 1);
+        window.parent.postMessage('/', '*');
+    }
+
+    function setCookie(cName, cValue, cDay) {
+        var expire = new Date();
+        expire.setDate(expire.getDate() + cDay);
+        var cookies = cName + '=' + escape(cValue) + '; path=/ '; // 한글 깨짐을 막기위해 escape(cValue)를 합니다.
+        if (typeof cDay != 'undefined') cookies += ';expires=' + expire.toGMTString() + ';';
+        document.cookie = cookies;
     }
 
     function getUrlParams() {
