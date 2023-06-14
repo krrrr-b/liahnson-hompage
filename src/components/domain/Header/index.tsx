@@ -59,6 +59,8 @@ export default function Header(): ReturnType<React.FunctionComponent> {
 
   const onClick = (e: React.MouseEvent) => {
     e.stopPropagation();
+
+    console.log('page change');
     setIsOpen(false);
   };
 

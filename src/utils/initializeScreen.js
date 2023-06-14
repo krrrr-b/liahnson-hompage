@@ -4,37 +4,6 @@ export function initializeScreen() {
 
     // console.log("isMobile: " + isMobile);
 
-    const params = getUrlParams();
-    const path = location.pathname.replace("/", "");
-    const lang = params['lang'];
-
-    let url = "";
-    if (path !== "" && path !== undefined) {
-        url += ("path=" + path);
-    }
-
-    if (lang !== "" && lang !== undefined) {
-        url += (url != "" ? ("&lang=" + lang) : "lang=" + lang);
-    }
-
-    if (url !== "") {
-        const redirectUrl = "?" + url;
-        // if (redirectUrl !== window.parent.location.search) {
-            console.log(redirectUrl);
-            // window.parent.location.href = 'http://www.liahnson.com/test.html' + redirectUrl;
-        // }
-    }
-    
-    function getUrlParams() {     
-        var params = {};  
-        location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, 
-            function(str, key, value) { 
-                params[key] = value; 
-            }
-        );     
-        return params; 
-    }
-
     if (isMobile) {
         // 모바일의 경우 브라우저 크기를 조절하지 않는다
         return;
