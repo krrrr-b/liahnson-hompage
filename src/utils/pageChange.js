@@ -5,7 +5,7 @@ export function pageChange(langParam = "", pathParam = "") {
     const lang = langParam !== "" ? langParam : params['lang'];
 
     let url = "";
-    if (path !== "" && path !== undefined) {
+    if ((path !== "" && path !== "main") && path !== undefined) {
         url += ("path=" + path);
     }
 
@@ -13,23 +13,13 @@ export function pageChange(langParam = "", pathParam = "") {
         url += (url != "" ? ("&lang=" + lang) : "lang=" + lang);
     }
 
-    if (url !== "" && url !== "main") {
+    if (url != "" && url != "lang=ko") {
         const redirectUrl = "?" + url;
-        if (currentUrl == redirectUrl) {
-            return;
-        }
-
-        currentUrl = redirectUrl;
-        console.log(redirectUrl);
+        // console.log(redirectUrl);
         window.parent.location.href = '/test.html' + redirectUrl;
     } else {
-        if (currentUrl == url) {
-            return;
-        }
-
-        currentUrl = url;
         console.log(url);
-        window.parent.location.href = '/';
+        window.parent.location.href = "/";
     }
 
     function getUrlParams() {
