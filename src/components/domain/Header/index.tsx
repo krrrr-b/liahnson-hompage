@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import Button from 'components/base/Button';
 import S from 'components/domain/Header/styles';
 import { BUTTON_COLORS } from 'components/base/Button/constants';
@@ -21,6 +21,7 @@ import { initializeScreen } from "utils/initializeScreen";
 import { pageChange } from "utils/pageChange";
 
 export default function Header(): ReturnType<React.FunctionComponent> {
+  const navigate = useNavigate();
   const [theme, setTheme] = useState('dark');
   const [widths, setWidths] = useState<Array<string>>([]);
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);
@@ -42,6 +43,31 @@ export default function Header(): ReturnType<React.FunctionComponent> {
       return '';
     });
     setWidths(newWidths);
+  }, []);
+
+  useEffect(() => {
+    let page = location.search
+    .replace('page=', '/')
+    .replace('?', '');
+
+    if ((page != undefined && page.trim() != "") && location.pathname != page && page != '/') {
+      let pathList = new Array(
+        '/services',
+        '/clients',
+        '/experts',
+        '/careers',
+        '/about',
+        '/compliance',
+        '/compliance-additional',
+        '/cookie',
+        '/terms',
+        '/privacy'
+      );
+
+      if (pathList.includes(page)) {
+        navigate(page);
+      }
+    }
   }, []);
 
   const createRef = (el: HTMLButtonElement | null) => {
