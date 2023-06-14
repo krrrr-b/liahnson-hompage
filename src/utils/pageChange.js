@@ -12,10 +12,13 @@ export function pageChange(langParam = "", pathParam = "") {
         url += (url != "" ? ("&lang=" + lang) : "lang=" + lang);
     }
 
+    console.log(url);
     if (url !== "") {
         const redirectUrl = "?" + url;
         console.log(redirectUrl);
-        window.parent.location.href = 'http://www.liahnson.com/test.html' + redirectUrl;
+        // window.parent.location.href = 'http://www.liahnson.com/test.html' + redirectUrl;
+    } else {
+        window.parent.location.href = 'http://www.liahnson.com/test.html';
     }
 
     function getUrlParams() {
