@@ -18,6 +18,7 @@ import { IconName } from 'assets/icons';
 import MediaQueryContext from 'contexts/MediaQueryContext';
 import i18n from "languages/i18n";
 import { initializeScreen } from "utils/initializeScreen";
+import { pageChange } from "utils/pageChange";
 
 export default function Header(): ReturnType<React.FunctionComponent> {
   const [theme, setTheme] = useState('dark');
@@ -60,7 +61,7 @@ export default function Header(): ReturnType<React.FunctionComponent> {
   const onClick = (e: React.MouseEvent) => {
     e.stopPropagation();
 
-    console.log('page change');
+    pageChange();
     setIsOpen(false);
   };
 
@@ -182,7 +183,7 @@ const dropDownItems: MiniDropdownItemType[] = [
     label: 'Kor',
     onClick: () => {
       i18n.changeLanguage("ko");
-      window.location.reload();
+      pageChange("ko");
     },
     selected: i18n.language === "ko"
   },
@@ -190,7 +191,7 @@ const dropDownItems: MiniDropdownItemType[] = [
     label: 'Eng',
     onClick: () => {
       i18n.changeLanguage("en");
-      window.location.reload();
+      pageChange("en");
     },
     selected: i18n.language === "en"
   },
