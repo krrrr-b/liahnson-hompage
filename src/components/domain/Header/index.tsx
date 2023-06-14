@@ -48,6 +48,8 @@ export default function Header(): ReturnType<React.FunctionComponent> {
   useEffect(() => {
     let page = location.search
       .replace('page=', '/')
+      .replace('&lang=ko', '')
+      .replace('&lang=en', '')
       .replace('?', '');
 
     if ((page != undefined && page.trim() != "") && location.pathname != page && page != '/') {
