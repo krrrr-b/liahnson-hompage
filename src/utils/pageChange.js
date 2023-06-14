@@ -1,5 +1,7 @@
 let currentUrl = "";
 export function pageChange(langParam = "", pathParam = "") {
+    return;
+    
     const params = getUrlParams();
     const path = pathParam != "" ? pathParam.toLowerCase() : location.pathname.replace("/", "");
     const lang = langParam !== "" ? langParam : params['lang'];
