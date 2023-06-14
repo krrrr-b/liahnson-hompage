@@ -17,7 +17,7 @@ export function pageChange(langParam = "", pathParam = "") {
         console.log(redirectUrl);
         // window.parent.location.href = 'http://www.liahnson.com/test.html' + redirectUrl;
     } else {
-        console.log(redirectUrl);
+        console.log(url);
         // window.parent.location.href = 'http://www.liahnson.com/test.html';
     }
 
