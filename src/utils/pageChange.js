@@ -10,24 +10,31 @@ export function pageChange(langParam = "", pathParam = "") {
     }
 
     if (lang !== "" && lang !== undefined) {
-        url += (url != "" ? ("?lang=" + lang) : "lang=" + lang);
+        url += (url != "" ? ("&lang=" + lang) : "lang=" + lang);
     }
 
     if (url != "") {
-        const redirectUrl = "/" + url;
-        setCookie("page", redirectUrl, 1);
-        window.parent.postMessage(redirectUrl, '*');
+        const redirectUrl = "?" + url;
+        if (currentUrl != redirectUrl) {
+            setCookie("page", redirectUrl, 1);
+            window.parent.postMessage(redirectUrl, '*');
+        }
+        currentUrl = redirectUrl;
     } else if (url == "lang=ko") {
-        const redirectUrl = "/" + url;
-        setCookie("page", redirectUrl, 1);
-        window.parent.postMessage(redirectUrl, '*');
+        const redirectUrl = "?" + url;
+        if (currentUrl != redirectUrl) {
+            setCookie("page", redirectUrl, 1);
+            window.parent.postMessage(redirectUrl, '*');
+        }
+        currentUrl = redirectUrl;
     } else {
-        setCookie("page", "/", 1);
+        currentUrl = "/";
+        setCookie("page", "?", 1);
         window.parent.postMessage('/', '*');
     }
 
     function setCookie(cName, cValue, cDay) {
-        console.log(cValue);
+        // console.log(cValue);
 
         var expire = new Date();
         expire.setDate(expire.getDate() + cDay);
