@@ -194,7 +194,7 @@ const dropDownItems: MiniDropdownItemType[] = [
     label: 'Kor',
     onClick: () => {
       i18n.changeLanguage("ko");
-      window.location.reload();
+      // window.location.reload();
     }, 
     selected: i18n.language === "ko"
   },
@@ -202,7 +202,7 @@ const dropDownItems: MiniDropdownItemType[] = [
     label: 'Eng',
     onClick: () => {
       i18n.changeLanguage("en");
-      window.location.reload();
+      // window.location.reload();
     },
     selected: i18n.language === "en",
   },
