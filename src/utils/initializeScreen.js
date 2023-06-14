@@ -19,10 +19,10 @@ export function initializeScreen() {
 
     if (url !== "") {
         const redirectUrl = "?" + url;
-        if (redirectUrl !== window.parent.location.search) {
+        // if (redirectUrl !== window.parent.location.search) {
             console.log(redirectUrl);
             // window.parent.location.href = 'http://www.liahnson.com/test.html' + redirectUrl;
-        }
+        // }
     }
     
     function getUrlParams() {     
