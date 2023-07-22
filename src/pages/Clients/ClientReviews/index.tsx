@@ -29,7 +29,7 @@ export default function ClientReviews(): ReturnType<React.FunctionComponent> {
               {t('client_reviews')}
             </S.TextContainerTitleText>
             <S.TextContainerAuthor>
-              - by A consulting firm director
+              - A consulting firm director
             </S.TextContainerAuthor>
           </S.TextContainerTitle>
         </S.TextContainer>

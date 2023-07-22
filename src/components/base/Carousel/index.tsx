@@ -89,7 +89,7 @@ const Carousel = ({
     }
   };
 
-  // 자동 스크롤 1.5s
+  // 자동 스크롤 1.5s > 2.5s로 변경
   useEffect(() => {
     const id = setInterval(() => {
       // Our Strength 만 해당
@@ -108,7 +108,7 @@ const Carousel = ({
       }
 
       setCount(count+1);
-    }, 1500);
+    }, 2500);
     
     if(currentIndex >= 4) {
       setCurrentIndex(0);

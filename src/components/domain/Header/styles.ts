@@ -144,7 +144,7 @@ const LinkItem = styled(NavLink)<{ theme?: string }>`
   }
 `;
 
-const LinkItemDiv = styled.div`
+const LinkItemDiv = styled.div<{ theme?: string }>`
   position: relative;
   display: inline-block;
   color: ${({ theme }) =>

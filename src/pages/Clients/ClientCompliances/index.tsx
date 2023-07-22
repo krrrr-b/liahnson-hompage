@@ -10,7 +10,7 @@ export default function ClientCompliances(): ReturnType<React.FunctionComponent>
       <Container>
         <Inner>
           <S.Wrapper>
-            <S.Title>Client Compliances</S.Title>
+            <S.Title>Client Compliance</S.Title>
             <S.Description style={{wordBreak: 'keep-all'}}>
               {t('client_compliances')}
             </S.Description>

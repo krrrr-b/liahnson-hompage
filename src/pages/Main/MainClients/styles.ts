@@ -88,6 +88,70 @@ const BottomDescription = styled.p`
   `}
 `;
 
+const ContentBox = styled.div`
+  color: var(--color-grey-000);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 13.9rem 0rem 4rem 0rem;
+
+`;
+
+const Content = styled.div`
+  padding-bottom: 16rem;
+  width: 33%;
+
+  &:nth-child(2), &:nth-child(5) {
+    padding-left: 10%;
+  }
+
+  &:nth-child(3), &:nth-child(6) {
+    padding-left: 20%;
+  }
+
+  span {
+    color : #FF85A4;
+  }
+
+  img {
+    width: 65px;
+    height: 72px;
+  }
+  p {
+    white-space: nowrap;
+  }
+
+  p:first-of-type {
+    font-size: 92px;
+  }
+
+  p:last-of-type {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  ${({ theme }) => css`
+  @media (max-width: ${theme.breakpoints.medium}) {
+    width: 50%;
+
+    &:nth-child(2), &:nth-child(3), &:nth-child(5), &:nth-child(6) {
+      padding-left: 0;
+    }
+
+    p:first-of-type {
+      font-size: 48px;
+    }
+  
+    p:last-of-type {
+      font-size: 15px;
+      line-height: 30px;
+    }
+
+    img {
+      width: 20%;
+    }
+`}
+`;
 export default {
   Wrapper,
   TitleWrapper,
@@ -97,4 +161,6 @@ export default {
   BottomDescription,
   DescriptionWrapper,
   BottomDescriptionWrapper,
+  ContentBox,
+  Content
 };

@@ -15,7 +15,7 @@ export default function ExpertsCompliances(): ReturnType<React.FunctionComponent
     <Container>
       <Inner>
         <S.Wrapper>
-          <S.Title>Experts Compliances</S.Title>
+          <S.Title>Expert Compliance</S.Title>
           <div>
             <S.Description style={{wordBreak: 'keep-all'}}>
               {t('experts_compliances')}

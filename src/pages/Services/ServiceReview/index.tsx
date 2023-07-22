@@ -22,7 +22,7 @@ export default function ServiceReview(): ReturnType<React.FunctionComponent> {
     <S.Reviews>
       <Container>
         <Inner>
-          <S.Title>Experts Reviews</S.Title>
+          <S.Title>Expert Highlights</S.Title>
         </Inner>
       </Container>
 
@@ -69,14 +69,14 @@ const carouselItems: { content: string; author: string; reference: string }[] =
   [
     {
       content:
-        '“I was working with Liahnson on a project for strategy consultation. I appreciated a lot the collaboration with Liahnson as they work very professionally and the entire execution of the project went very well.”',
+        '“I worked with Lihanson on a strategy consulting project. I appreciated a lot the collaboration with Liahnson as they work very professionally and the entire execution of the project went very well.”',
       author: 'Thomas Mittendrein',
       reference:
         'Strategic Marketing Leader, Performance Lubricants, Global Petrochemicals Company',
     },
     {
       content:
-        '“I truly enjoy working on project with Liahnson. They are a very professional group and do a terrific job in defining the scope and expectations of a project to assure a proper fit. Their preparation process is also one of the best in the industry, as are their completion and payment processes.”',
+        '“I truly enjoy working on projects with Liahnson. They are a very professional group and do a terrific job in defining the scope and expectations of a project to assure a proper fit. Their preparation process is also one of the best in the industry, as are their completion and payment processes.”',
       author: 'Michael Accavitti',
       reference: 'Senior Vice President Global Automotive Company',
     },

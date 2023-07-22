@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 const Wrapper = styled.section`
   padding: 13rem 0;
   margin-bottom: -30rem;
+  overflow-x: hidden;
 
   ${({ theme }) => css`
     @media (max-width: ${theme.breakpoints.medium}) {
@@ -92,7 +93,6 @@ const SubDescriptionList = styled.ul`
   ${({ theme }) => css`
     @media (max-width: ${theme.breakpoints.medium}) {
       flex-direction: column;
-      margin-bottom: 17.7rem;
       gap: 7.5rem;
     }
   `}
@@ -127,6 +127,59 @@ const SubDescriptionIconWrapper = styled.div`
   `}
 `;
 
+const Box = styled.div`
+  width: 35%;
+  padding-bottom: 30px;
+
+  span {
+    color: #FF85A4;
+  }
+
+  &:nth-child(even) {
+    margin-left: 15%;
+  }
+`;
+
+const CoverageWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%; 
+  padding: 18rem 0rem;
+
+  ${({ theme }) => css`
+@media (max-width: ${theme.breakpoints.medium}) {
+  padding: 0px 0px 45% 0px;
+  display: block;
+}
+`}
+`;
+
+const CoverageImage = styled.img`
+position: absolute;
+max-width: none;
+`;
+
+const ImageBox = styled.div`
+position: absolute;
+width:  781px;
+height: 781px;
+right: -30%;
+bottom: 10%;
+`;
+
+
+
+const CoverageBox = styled.div`
+  border-top: 3px solid #FF85A4;
+
+  ${({ theme }) => css`
+    @media (max-width: ${theme.breakpoints.medium}) {
+      border-top: none;
+      position: absolute;
+    }
+  `}
+`;
+
 export default {
   Wrapper,
   TitleWrapper,
@@ -139,4 +192,9 @@ export default {
   SubDescription,
   SubDescriptionIconWrapper,
   MobileLine,
+  Box,
+  CoverageBox,
+  ImageBox,
+  CoverageWrapper,
+  CoverageImage
 };

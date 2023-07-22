@@ -47,7 +47,7 @@ export default function ClientCoverage(): ReturnType<React.FunctionComponent> {
     {
       title: t('research_firms'),
       description:
-      isKoKR ? '소비자리서치, 마케팅리서치, 산업리서치 등 연간 1,500건 이상 프로젝트 수행' : 'Consumer Research, Market Research, Industry Research, etc',
+      isKoKR ? '소비자리서치, 마케팅리서치, 산업리서치 등 연간 1,500건 이상 프로젝트 수행' : 'Consumer Research, Market Research, Industry Research, etc.',
       score: '',
       unit: isKoKR ? '' : '',
       children: {
@@ -92,7 +92,7 @@ export default function ClientCoverage(): ReturnType<React.FunctionComponent> {
             content: isKoKR ? [
               '고객사는 사모 펀드로서 국내 유일의 제품과 기술을 보유한 신생 Bio-tech 기업에 대한 투자를 고려 중이나 해당 기업이 보유중인 제품/기술에 대한 검증 및 핵심 인원들에 대한 검증 작업이 필요했음',
             ] : [
-              'Our private equity fund client was considering investing in a newly established bio-tech company that owned a unique product and technology in the domestic market. However, they needed to validate the company`s products/technologies and key staff before executing the investment operation.'
+              'Our private equity fund client was considering investing in a newly established bio-tech company that owned a unique product and technology in the domestic market. However, they needed to validate the company’s products/technologies and key staff before executing the investment operation.'
             ],
           },
           {
@@ -101,7 +101,7 @@ export default function ClientCoverage(): ReturnType<React.FunctionComponent> {
               '해당 기업의 주력 제품 및 기술에 대한 확실한 검증을 위해 해당 제품군의 글로벌 선진기업 임원 출신 10명과 국내 Bio 업계 Senior 저명인사 5명을 확보하여 화상 Q&A세션 진행을 통해 검증/평판 확인 작업을 지원.',
               '상기 세션 진행 완료 후 보다 심층적인 분석을 위해 글로벌 선진기업 임원 출신 참여자 중 1명을 지정하여 기술/시장 전망에 대한 50페이지 내외의 추가 보고서 작성 작업을 Arrange함',
             ] : [
-              'To ensure a qualitative verification of the target company`s main products and technologies, 10 executive-level experts from global leading companies in the corresponding product category and 5 senior experts from the domestic bio-industry were recruited, and a videoconference Q&A session was arranged with each of these experts and our client to support our client’s verification and reputation confirmation process.',
+              'To ensure a qualitative verification of the target company’s main products and technologies, 10 executive-level experts from global leading companies in the corresponding product category and 5 senior experts from the domestic bio-industry were recruited, and a videoconference Q&A session was arranged with each of these experts and our client to support our client’s verification and reputation confirmation process.',
               'After completing all the above Q&A sessions, one expert from the executives of global leading companies was chosen to write an additional report of approximately 50 pages on technology and market prospects for a more in-depth analysis.'
             ],
           },
@@ -136,8 +136,8 @@ export default function ClientCoverage(): ReturnType<React.FunctionComponent> {
               '잠재적 고객 후보군 기업들의 CIO/CTO 대상 설문 조사 : 각 국가별 30 건(직원 수 500명 이하 기업 15 곳 / 500명 이상 기업 15 곳), 총 90건의 서면 설문 + 설문 결과를 바탕으로 한 Follow up 인터뷰 진행 Arrange를 통해 기존 제품군 선호도 및 고객사 베타 버전에 대한 품평 피드백 획득을 지원',
               '상기 시장 검토 프로젝트에서 참여한 전문가 중 국가별 1명이 현지 진출을 위한 본격적인 Operation에 기여할 Advisory Role로 고용되어 수개월간 참여',
             ] : [
-              'We helped our corporate client better understand the market conditions by recruiting industry-leading experts from each country`s B2B SaaS industry. In total, we arranged videoconference Q&A sessions and on-site meetings with a total of 15 experts from the major players in each country`s industry (5 experts from each country) to help our client obtain the latest information on local market trends.',
-              'We also executed a survey of CIO/CTOs of potential customer companies. In total, we conducted written surveys of 30 companies (15 with less than 500 employees and 15 with more than 500 employees) in each country, for a total of 90 surveys. Then, follow-up consultations were conducted based on the survey results to obtain detailed feedback on the preference for existing product offerings and beta versions of the client`s solutions.',
+              'We helped our corporate client better understand the market conditions by recruiting industry-leading experts from each country’s B2B SaaS industry. In total, we arranged videoconference Q&A sessions and on-site meetings with a total of 15 experts from the major players in each country’s industry (5 experts from each country) to help our client obtain the latest information on local market trends.',
+              'We also executed a survey of CIO/CTOs of potential customer companies. In total, we conducted written surveys of 30 companies (15 with less than 500 employees and 15 with more than 500 employees) in each country, for a total of 90 surveys. Then, follow-up consultations were conducted based on the survey results to obtain detailed feedback on the preference for existing product offerings and beta versions of the client’s solutions.',
               'Among all experts who participated in this market research project, one expert from each country was selected and employed to an advisory role to contribute to the actual operation of local expansion of our corporate client for several months.'
             ],
           },
@@ -161,7 +161,7 @@ export default function ClientCoverage(): ReturnType<React.FunctionComponent> {
               '고객사는 멤버십 데이터 분석을 기반으로 마케팅 서비스를 제공하는 스타트업으로 국내 각종 산업군 마케팅 부서들의 멤버십 데이터 분석 기반 마케팅 Tool 서비스 수용도 및 가격 민감도 조사 니즈가 발생하였음',
               '데이터 기반 부가 가치 서비스, 특히 국내외 Data-Driven Marketing 선진 사례 벤치마킹 필요성이 대두되었음',
             ] : [
-              'Our client was a startup that provides marketing services based on membership data analysis, and they needed to survey the adoption and price sensitivity of marketing tool services that are based on membership data analysis for various industries marketing departments in Korea.',
+              'Our client was a startup that provides marketing services based on membership data analysis, and they needed to survey the adoption and price sensitivity of marketing tool services that are based on membership data analysis for various industries\'s marketing departments in Korea.',
               'They also needed to do a benchmarking of best practices from industry leaders regarding data-based value-added services, especially regarding data-driven marketing, for both the domestic market and global market.'
             ],
           },
@@ -184,7 +184,7 @@ export default function ClientCoverage(): ReturnType<React.FunctionComponent> {
     <S.Coverage>
       <Container>
         <Inner>
-          <S.Title>Clients Coverage</S.Title>
+          <S.Title>Client Coverage</S.Title>
           <S.Description style={{wordBreak: 'keep-all'}}>
             {t('service_dozen_of_consultations_1')}
           </S.Description>

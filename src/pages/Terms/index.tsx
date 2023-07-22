@@ -233,7 +233,7 @@ export default function Terms(): ReturnType<React.FunctionComponent> {
       <Container>
         <Inner>
           <S.TitleWrapper>
-            <S.Title>Terms & Conditions</S.Title>
+            <S.Title>  {isKoKR ? '이용약관' : 'Terms & Conditions'}</S.Title>
           </S.TitleWrapper>
           {isKoKR ? koreanTerms : englishTerms}
         </Inner>

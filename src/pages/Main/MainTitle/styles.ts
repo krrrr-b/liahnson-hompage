@@ -36,7 +36,7 @@ const DescriptionHover = styled(DescriptionHover1)``;
 const HeaderDescription = styled.p`
   padding-bottom: 6.67rem;
   font-size: 8rem;
-  font-weight: 510;
+  font-weight: 700;
   line-height: 9rem;
 
   & {

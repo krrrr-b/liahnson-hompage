@@ -70,7 +70,7 @@ export default function ExpertsInterviews(): ReturnType<React.FunctionComponent>
     <>
       <Container>
         <Inner>
-          <S.Title>Experts Interviews</S.Title>
+          <S.Title>Expert Highlights</S.Title>
         </Inner>
       </Container>
       <S.Container
@@ -137,14 +137,14 @@ export default function ExpertsInterviews(): ReturnType<React.FunctionComponent>
 const data = [
   {
     image: expert_interview1,
-    text: `“I was working with Liahnson on a project for strategy consultation. I appreciated a lot the collaboration with Liahnson as they work very professionally and the entire execution of the project went very well.”`,
+    text: `“I worked with Liahnson on a strategy consulting project.  I appreciated a lot the collaboration with Liahnson as they work very professionally and the entire execution of the project went very well.”`,
     author: '- Thomas Mittendrein',
     team: 'Strategic Marketing Leader, Performance Lubricants, Global Petrochemicals Company',
   },
   {
     image:
     expert_interview2,
-    text: `“I truly enjoy working on project with Liahnson. They are a very professional group and do a terrific job in defining the scope and expectations of a project to assure a proper fit. Their preparation process is also one of the best in the industry, as are their completion and payment processes.”`,
+    text: `“I truly enjoy working on projects with Liahnson. They are a very professional group and do a terrific job in defining the scope and expectations of a project to assure a proper fit. Their preparation process is also one of the best in the industry, as are their completion and payment processes.”`,
     author: '- Michael Accavitti',
     team: 'Senior Vice President, Global Automotive Company',
   },
@@ -153,6 +153,6 @@ const data = [
     expert_interview3,
     text: `“Sincere! High efforts! This is my deepest feelings since my cooperation with Liahnson.”`,
     author: '- Liu Bo',
-    team: 'Vice President Sales&Marketing Department, Global Automotive Company',
+    team: 'Vice President Sales & Marketing Department, Global Automotive Company',
   },
 ];

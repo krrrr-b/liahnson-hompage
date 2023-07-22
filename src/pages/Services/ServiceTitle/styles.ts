@@ -1,6 +1,39 @@
 import styled, { css } from 'styled-components';
 import PageTopPadding from 'components/shared/PageTopPadding';
 
+const DescriptionBox = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: fit-content;
+  margin-bottom: 2rem;
+
+  ${({ theme }) => css`
+    @media (max-width: ${theme.breakpoints.medium}) {
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 4.7rem;
+    }
+  `}
+`;
+
+const DescriptionContent = styled.p`
+  margin-bottom: 6rem;
+  color: var(--color-grey-000);
+  font-size: 25px;
+  margin-top: 3rem;
+  line-height: 50px;
+  white-space: pre-line;
+
+  ${({ theme }) => css`
+    @media (max-width: ${theme.breakpoints.medium}) {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 35px;
+    }
+  `}
+`;
+
 const ServiceTitle = styled(PageTopPadding)`
   background-color: var(--color-grey-800);
 `;
@@ -22,6 +55,7 @@ const ServiceTitleText = styled.h3`
     }
   `}
 `;
+
 
 const ServiceDescription = styled.span`
   color: var(--color-grey-000);
@@ -59,6 +93,7 @@ const ServiceDescriptionBox = styled.div`
   `}
 `;
 
+
 const Box = styled.div`
   display: flex;
   align-items: center;
@@ -76,7 +111,7 @@ const HoverIconWrapper = styled.div`
   flex-wrap: wrap;
   margin-top: 17.6rem;
   & > :not(:last-child) {
-    margin-right: 3.2rem;
+    margin-right: 7rem;
   }
 
   ${({ theme }) => css`
@@ -137,22 +172,6 @@ const ExpandedListRightTitle = styled.p`
   `}
 `;
 
-const DescriptionContent = styled.p`
-  margin-bottom: 8.4rem;
-  margin-top: 4rem;
-  color: var(--color-grey-000);
-  font-size: 25px;
-  line-height: 50px;
-
-  ${({ theme }) => css`
-    @media (max-width: ${theme.breakpoints.medium}) {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 35px;
-    }
-  `}
-`;
-
 const ExpandedListRightDescription = styled.p`
   font-weight: 400;
   font-size: 25px;
@@ -171,6 +190,7 @@ const ExpandedListRightDescription = styled.p`
 const ExpandedListLeft = styled.div``;
 
 export default {
+  DescriptionBox,
   ServiceTitle,
   ServiceTitleText,
   ServiceDescriptionBox,

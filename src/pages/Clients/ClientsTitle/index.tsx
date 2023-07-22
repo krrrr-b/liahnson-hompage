@@ -11,6 +11,14 @@ import invest_cp_image from 'assets/images/invest_cp.jpg';
 import cp_image from 'assets/images/cp.jpg';
 import research_cp_image from 'assets/images/research_cp.jpg';
 import start_cp_image from 'assets/images/start_cp.jpg';
+import project from 'assets/icons/project.svg';
+import callender from 'assets/icons/callender.svg';
+import industry from 'assets/icons/industry.svg';
+import handshake from 'assets/icons/handshake.svg';
+import people from 'assets/icons/people.svg';
+import people2 from 'assets/icons/people2.svg';
+
+
 
 export default function ClientsTitle(): ReturnType<React.FunctionComponent> {
   const { isMobile } = useContext(MediaQueryContext);
@@ -94,6 +102,48 @@ const imagesData = [
   },
 ];
 
+  const clientsItem = [
+    {
+      img: project,
+      score: '100k',
+      span: '+',
+      label: i18n.language === "ko" ? '누적 프로젝트 수' : 'The cumulative number of projects'
+    },
+    {
+      img: callender,
+      score: '11k',
+      span: '+',
+      label: i18n.language === "ko" ? '연평균 수행 프로젝트 수' : 'Average number of projects per year'
+    },
+    {
+      img: industry,
+      score: '50',
+      span: '+',
+      label: i18n.language === "ko" ? '고객 산업 분야' : 'Client industry sectors'
+    },
+    {
+      img: handshake,
+      score: '99',
+      span: '%',
+      label: i18n.language === "ko" ? '재계약율' : 'Re-contracting rate'
+    },
+    {
+      img: people,
+      score: '600',
+      span: '+',
+      label: i18n.language === "ko" ? '누적 누적 고객 수' : 'The cumulative number of clients'
+    },
+    {
+      img: people2,
+      score: '80',
+      span: '+',
+      label: i18n.language === "ko" ? '연평균 신규 고객 수' : 'Annual average number of clients acquisitions'
+    },
+
+  ]
+
+
+
   return (
     <S.Title>
       <Container>
@@ -108,10 +158,21 @@ const imagesData = [
           <S.DescriptionContent style={{wordBreak: 'keep-all'}}>
             {t('client_page_header1')}<br/>{t('client_page_header2')}
           </S.DescriptionContent>
-          {isMobile && <MobileList items={mobileListItems} />}
+          <S.ContentBox>
+          {clientsItem.map(item => (
+              <S.Content>
+                <div>
+                <img src={item.img} alt={item.label}></img>
+                </div>
+                <p>{item.score}
+                <span>{item.span}</span>
+                </p>
+                <p>{item.label}</p>
+              </S.Content>
+          ))}
+          </S.ContentBox>
         </Inner>
       </Container>
-      {!isMobile && <ScrollingImages items={imagesData} requireAnimation={false} requireDescription={false}></ScrollingImages>}
     </S.Title>
   );
 }

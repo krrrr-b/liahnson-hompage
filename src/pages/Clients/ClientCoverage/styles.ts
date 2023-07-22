@@ -20,11 +20,13 @@ const Title = styled.h3`
   `}
 `;
 
+
 const Description = styled.p`
   margin-bottom: 11.4rem;
   font-weight: 400;
   font-size: 3rem;
   line-height: 6rem;
+  width: 50%;
 
   ${({ theme }) => css`
     @media (max-width: ${theme.breakpoints.medium}) {

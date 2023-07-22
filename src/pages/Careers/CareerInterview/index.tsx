@@ -15,8 +15,8 @@ const data = [
   {
     image:
       'https://images.unsplash.com/photo-1603796846097-bee99e4a601f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
-    text: isKorean ? '수평적인 조직문화, 개인 역량에 따른 확실한 성과급 제도는 이안손앤컴퍼니가 제공하는 가장 기본적인 근로자 권리입니다. 고객사와 전문가 사이에서 다양한 산업의 정보를 관장함으로써 4차 산업혁명 시대가 원하는 제너럴리스트가 될 수 있는 기회, 이안손앤컴퍼니가 제공합니다' : 'A horizontal organizational culture and a clear incentive system based on individual capabilities are the most basic worker rights provided by Liahnson & Company. Liahnson & Company provides an opportunity to become a generalist desired in the era of the 4th Industrial Revolution by managing information in various industries between clients and experts.',
-    reviewer: isKorean ?'김성훈 프로젝트 매니저' : 'Peter Kim Project Manager',
+    text: isKorean ? '수평적인 조직문화, 개인 역량에 따른 확실한 성과급 제도는 이안손앤컴퍼니가 제공하는 가장 기본적인 근로자 권리입니다. 고객사와 전문가 사이에서 다양한 산업의 정보를 관장함으로써 4차 산업혁명 시대가 원하는 제너럴리스트가 될 수 있는 기회, 이안손앤컴퍼니가 제공합니다' : '“A horizontal organizational culture and a clear incentive system based on individual capabilities are the most basic worker rights provided by Liahnson & Company. Liahnson & Company provides an opportunity to become a generalist desired in the era of the 4th Industrial Revolution by managing information in various industries between clients and experts.”',
+    reviewer: isKorean ?'김성훈 프로젝트 매니저' : 'Peter Kim | Project Manager',
   },
 ];
 

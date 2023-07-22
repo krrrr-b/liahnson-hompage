@@ -62,7 +62,7 @@ export default function Compliance(): ReturnType<React.FunctionComponent> {
     <S.Description>
       [Experts]
       <br />
-      - ContractTo conduct consultations through Liahnson, experts must sign Liahnson`s Terms & Conditions and agree to the
+      - Contract : To conduct consultations through Liahnson, experts must sign Liahnson`s Terms & Conditions and agree to the
       following:
       a. If a client asks questions that include important trade secrets, the expert will not disclose confidential
       information.
@@ -71,10 +71,10 @@ export default function Compliance(): ReturnType<React.FunctionComponent> {
       c. All information learned about the client during the consultation is considered confidential and will not be
       disclosed by the expert to third parties.
       <br /><br />
-      - Managing Conflicts of InterestThere is a possibility that there may be conflicts of interest from the expert`s point of view. Liahnson actively
-      seeks to identify and resolve any potential issues from the expert`s perspective, and mediates to prevent
-      experts from participating in projects that are deemed inappropriate for them. Liahnson assesses the expert`s
-      competence and potential conflicts of interest in advance by making use of the client`s pre-consultation
+      - Managing Conflicts of Interest : There is a possibility that there may be conflicts of interest from the expert’s point of view. Liahnson actively
+      seeks to identify and resolve any potential issues from the expert’s perspective and mediates to prevent
+      experts from participating in projects that are deemed inappropriate for them. Liahnson assesses the expert’s
+      competence and potential conflicts of interest in advance by making use of the client’s pre-consultation
       questions. If unexpected problems arise during the consultation, Liahnson requests that the consultation be
       immediately stopped.
     </S.Description>
@@ -85,7 +85,7 @@ export default function Compliance(): ReturnType<React.FunctionComponent> {
       <Container>
         <Inner>
           <S.TitleWrapper>
-            <S.Title>Compliance</S.Title>
+            <S.Title>{isKoKR ? '컴플라이언스' : 'Compliance'}</S.Title>
           </S.TitleWrapper>
           {isKoKR ? koreanCompliance : englishCompliance}
         </Inner>

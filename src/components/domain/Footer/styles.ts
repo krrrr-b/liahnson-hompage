@@ -57,7 +57,7 @@ const UpperLeft = styled.div`
 const UpperDescription = styled.p`
   margin-bottom: 8.6rem;
   color: var(--color-grey-000);
-  font-weight: 510;
+  font-weight: 700;
   font-size: 7rem;
   line-height: 9rem;
 

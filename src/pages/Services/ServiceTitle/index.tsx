@@ -9,6 +9,8 @@ import MediaQueryContext from 'contexts/MediaQueryContext';
 import S from 'pages/Services/ServiceTitle/styles';
 import { useContext, useEffect, useRef, useState } from 'react';
 import { useTranslation } from "react-i18next";
+import i18n from "languages/i18n";
+
 
 export default function ServiceTitle(): ReturnType<React.FunctionComponent> {
   const [selected, setSelected] = useState<HoverItemTitle | null>('Consultation');
@@ -16,6 +18,7 @@ export default function ServiceTitle(): ReturnType<React.FunctionComponent> {
   const serviceTitleRef = useRef(null);
   const { isMobile } = useContext(MediaQueryContext);
   const { t } = useTranslation()
+  const isKR = i18n.language === "ko";
 
   const onClick = (title: HoverItemTitle) => {
     if (title === selected && isMobile) {
@@ -169,12 +172,21 @@ export default function ServiceTitle(): ReturnType<React.FunctionComponent> {
       <Container>
         <Inner>
           <S.ServiceTitleText>Our Services</S.ServiceTitleText>
+
           <S.ServiceDescriptionBox>
             <S.ServiceDescription>Connecting experts,</S.ServiceDescription>
           </S.ServiceDescriptionBox>
+
           <S.ServiceDescriptionBox>
             <S.ServiceDescription>unlocking knowledge</S.ServiceDescription>
           </S.ServiceDescriptionBox>
+
+            <S.ServiceDescriptionBox>
+            <S.DescriptionContent> 
+            { isKR ? '이안손은 수년 간 축적한 풍부한 전문가 데이터베이스를 기반으로 최적의 전문가를 최적의 시기에\n 연결하여, 최적의 의사결정을 할 수 있도록 지원합니다.' : 'We provide optimized solutions based on your specific requirements and help you obtain the knowledge\n you need as soon as you need it through our extensive expert network.'}
+            </S.DescriptionContent>
+            </S.ServiceDescriptionBox>
+
           <S.DescriptionContent style={{wordBreak: 'keep-all'}}>
           </S.DescriptionContent>
           <S.HoverIconWrapper>
