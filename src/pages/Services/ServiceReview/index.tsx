@@ -69,7 +69,7 @@ const carouselItems: { content: string; author: string; reference: string }[] =
   [
     {
       content:
-        '“I worked with Lihanson on a strategy consulting project. I appreciated a lot the collaboration with Liahnson as they work very professionally and the entire execution of the project went very well.”',
+        '“I worked with Liahnson on a strategy consulting project. I appreciated a lot the collaboration with Liahnson as they work very professionally and the entire execution of the project went very well.”',
       author: 'Thomas Mittendrein',
       reference:
         'Strategic Marketing Leader, Performance Lubricants, Global Petrochemicals Company',

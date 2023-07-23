@@ -78,7 +78,7 @@ const DescriptionContent = styled.p`
 `;
 
 const ContentBox = styled.div`
-  margin-top: 13.9rem;
+  margin: 13.9rem 15rem 4rem 0rem;
   color: var(--color-grey-000);
   display: flex;
   flex-wrap: wrap;
@@ -115,7 +115,7 @@ const Content = styled.div`
   }
 
   p:last-of-type {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 30px;
   }
 
