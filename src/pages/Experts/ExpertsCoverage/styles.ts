@@ -86,6 +86,7 @@ bottom: 17%;
 const CoverageBox = styled.div`
   border-top: 3px solid #FF85A4;
 
+
   ${({ theme }) => css`
     @media (max-width: ${theme.breakpoints.medium}) {
       border-top: none;
