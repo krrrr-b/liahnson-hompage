@@ -84,6 +84,11 @@ const ContentBox = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
 
+  ${({ theme }) => css`
+    @media (max-width: ${theme.breakpoints.medium}) {
+      margin: 0rem 0rem 0rem 0rem;
+    }
+  `}
 `;
 
 const Content = styled.div`
@@ -132,8 +137,9 @@ const Content = styled.div`
     }
   
     p:last-of-type {
-      font-size: 15px;
+      font-size: 10px;
       line-height: 30px;
+      white-space: pre-wrap;
     }
 
     img {
