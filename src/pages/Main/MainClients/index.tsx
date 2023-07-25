@@ -144,7 +144,7 @@ export default function MainClients(): ReturnType<React.FunctionComponent> {
       img: people2,
       score: '80',
       span: '+',
-      label: i18n.language === "ko" ? '연평균 신규 고객 수' : 'Annual average number of clients acquisitions'
+      label: i18n.language === "ko" ? '연평균 신규 고객 수' : 'Annual average number of' + '\n' + 'clients acquisitions'
     },
 
   ]
@@ -170,7 +170,7 @@ export default function MainClients(): ReturnType<React.FunctionComponent> {
           </S.TitleWrapper>
           <S.ContentBox>
           {clientsItem.map(item => (
-              <S.Content>
+              <S.Content key={item.label}>
                 <img src={item.img} alt={item.label}></img>
                 <p>{item.score}
                 <span>{item.span}</span>

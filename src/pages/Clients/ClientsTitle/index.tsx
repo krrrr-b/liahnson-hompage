@@ -160,7 +160,7 @@ const imagesData = [
           </S.DescriptionContent>
           <S.ContentBox>
           {clientsItem.map(item => (
-              <S.Content>
+              <S.Content key={item.label}>
                 <div>
                 <img src={item.img} alt={item.label}></img>
                 </div>

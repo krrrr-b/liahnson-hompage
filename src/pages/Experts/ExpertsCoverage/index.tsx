@@ -196,7 +196,7 @@ export default function ExpertsCoverage(): ReturnType<React.FunctionComponent> {
 
 
           {isMobile && mobileCoverage.map(item => 
-          (<S.CoverageWrapper>
+          (<S.CoverageWrapper key={item.label}>
           <S.CoverageBox style={{ left: item.left}}>
           <p style={{ fontSize: '48px'}}>{item.score}</p>
           <p style={{ fontSize: '15px'}}>{item.label}</p>  
