@@ -147,13 +147,10 @@ const CoverageWrapper = styled.div`
   padding: 18rem 0rem;
 
   ${({ theme }) => css`
-  @media (max-width: ${theme.breakpoints.medium}) {
-    margin-top: -50px;
-    margin-bottom: -150px;
-    padding: 0px 0px 45% 0px;
-    display: block;
-    padding-bottom: 500px;
-  }
+@media (max-width: ${theme.breakpoints.medium}) {
+  padding: 0px 0px 45% 0px;
+  display: block;
+}
 `}
 `;
 

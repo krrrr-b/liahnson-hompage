@@ -135,32 +135,32 @@ export default function MainExperts(): ReturnType<React.FunctionComponent> {
       img: isKoKR ? MobileCoverageGlobal : MobileCoverageGlobal,
       left: isKoKR ? '10px' : '10px',
       imgWidth: isKoKR ? '170%' : '170%',
-      imgleft: isKoKR ? '40%' : '40%',
+      imgleft: isKoKR ? '33%' : '33%',
       imgTop: isKoKR ? '-100px' : '-100px',
     },
     {
       score: isKoKR ? '450k+': '450k+',
       label: isKoKR ? '한국 전문가 규모' : 'Experts in Korea',
       img: isKoKR ? MobileKorea : MobileKorea,
-      left: isKoKR ? '35%' : '35%',
+      left: isKoKR ? '55%' : '55%',
       imgWidth: isKoKR ? '159%' : '159%',
-      imgleft: isKoKR ? '35%' : '35%',
+      imgleft: isKoKR ? '60%' : '60%',
       imgTop: isKoKR ? '-184px' : '-184px',
     },
     {
       score: isKoKR ? '60+' : '60+',
       label: isKoKR ? '전문가 산업 분야' : 'Industry coverage',
       img: isKoKR ? MobileIndustry : MobileIndustry,
-      left: isKoKR ? '30%' : '30%',
+      left: isKoKR ? '27%' : '27%',
       imgWidth: isKoKR ? '250%' : '250%',
-      imgleft: isKoKR ? '-160%' : '-160%',
-      imgTop: isKoKR ? '-100%' : '-155%',
+      imgleft: isKoKR ? '-230%' : '-230%',
+      imgTop: isKoKR ? '-185%' : '-185%',
     },
     {
       score: isKoKR ? '50+' : '50+',
       label: isKoKR ? '전문가 국가' : 'Cuntry coverage',
       img: isKoKR ? MobileGlobalExperts : MobileGlobalExperts,
-      left: isKoKR ? '30%' : '30%',
+      left: isKoKR ? '60%' : '60%',
       imgWidth: isKoKR ? '275%' : '275%',
       imgleft: isKoKR ? '60%' : '60%',
       imgTop: isKoKR ? '-110px' : '-110px',
@@ -170,7 +170,7 @@ export default function MainExperts(): ReturnType<React.FunctionComponent> {
       label: isKoKR ? '파트너쉽을 체결한 글로벌 파트너사' : 'Global partner companies with established partnerships',
       img: isKoKR ? MobilePartners : MobilePartners,
       imgWidth: isKoKR ? '100%' : '100%',
-      left: isKoKR ? '25%' : '25%',
+      left: isKoKR ? '15%' : '15%',
       imgleft: isKoKR ? '-74%' : '-74%',
       imgTop: isKoKR ? '-95px' : '-95px',
     },
@@ -271,7 +271,7 @@ export default function MainExperts(): ReturnType<React.FunctionComponent> {
       </S.CoverageWrapper>
 
           {isMobile && mobileCoverage.map(item => 
-          (<S.CoverageWrapper key={item.label}>
+          (<S.CoverageWrapper>
           <S.CoverageBox style={{ left: item.left}}>
           <p style={{ fontSize: '48px'}}>{item.score}</p>
           <p style={{ fontSize: '15px'}}>{item.label}</p>  

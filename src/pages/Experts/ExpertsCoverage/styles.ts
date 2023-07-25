@@ -57,16 +57,13 @@ const CoverageWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 70%; 
-  padding: 18rem 0rem;
+  padding: 13.9rem 0px 18rem 0px;
 
   ${({ theme }) => css`
-  @media (max-width: ${theme.breakpoints.medium}) {
-    margin-top: -50px;
-    margin-bottom: -150px;
-    padding: 0px 0px 45% 0px;
-    display: block;
-    padding-bottom: 500px;
-  }
+@media (max-width: ${theme.breakpoints.medium}) {
+  padding: 0px 0px 45% 0px;
+  display: block;
+}
 `}
 `;
 

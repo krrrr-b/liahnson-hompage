@@ -18,7 +18,7 @@ const Header = styled.div`
 
 const DescriptionHover1 = styled.span`
   color: var(--color-grey-800);
-  font-weight: 700;
+  font-weight: 500;
   font-size: 80px;
   line-height: 95px;
 

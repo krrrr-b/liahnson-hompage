@@ -106,7 +106,7 @@ const TextContainerTitle = styled.div`
       position: absolute;
       top: 50%;
       left: 50%;
-      width: 90%;
+      width: 80%;
       padding: 3.8rem 2.8rem;
       background: var(--color-grey-000);
       border-radius: 2rem;
