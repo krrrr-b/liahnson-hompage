@@ -93,8 +93,12 @@ const ContentBox = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+<<<<<<< HEAD
   margin: 13.9rem 0rem 4rem 0rem;
 
+=======
+  margin: 13.9rem 15rem 4rem 0rem;
+>>>>>>> parent of 818214c (edit 2)
 `;
 
 const Content = styled.div`
