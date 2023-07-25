@@ -137,7 +137,7 @@ const Content = styled.div`
     }
   
     p:last-of-type {
-      font-size: 10px;
+      font-size: 15px;
       line-height: 30px;
       white-space: pre-wrap;
     }
