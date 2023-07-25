@@ -116,7 +116,7 @@ const Content = styled.div`
   }
 
   p:first-of-type {
-    font-size: 100px;
+    font-size: 92px;
   }
 
   p:last-of-type {

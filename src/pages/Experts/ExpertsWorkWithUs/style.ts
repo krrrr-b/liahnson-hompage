@@ -26,13 +26,9 @@ const TitleText = styled.h3`
 const DescriptionBox = styled.div`
   display: flex;
   align-item: center;
-  border-bottom: 1px solid var(--color-grey-300);
+  border-bottom: 1px solid white;
   padding: 8rem 0rem;
   justify-content: space-between;
-
-  &:last-child {
-    border-bottom: none;
-  }
 
   ${({ theme }) => css`
     @media (max-width: ${theme.breakpoints.large}) {
