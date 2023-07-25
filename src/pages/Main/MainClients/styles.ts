@@ -98,12 +98,6 @@ const ContentBox = styled.div`
 
 =======
   margin: 13.9rem 15rem 4rem 0rem;
-
-  ${({ theme }) => css`
-  @media (max-width: ${theme.breakpoints.medium}) {
-    margin: 13.9rem 0rem 4rem 0rem;
-  }
-`}
 `;
 
 const Content = styled.div`
