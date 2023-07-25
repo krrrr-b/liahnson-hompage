@@ -131,7 +131,7 @@ const Content = styled.div`
   }
 
   p:last-of-type {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 30px;
   }
 
@@ -148,8 +148,9 @@ const Content = styled.div`
     }
   
     p:last-of-type {
-      font-size: 15px;
+      font-size: 10px;
       line-height: 30px;
+      white-space: pre-wrap;
     }
 
     img {

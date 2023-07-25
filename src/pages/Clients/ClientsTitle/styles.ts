@@ -78,12 +78,17 @@ const DescriptionContent = styled.p`
 `;
 
 const ContentBox = styled.div`
-  margin-top: 13.9rem;
+  margin: 13.9rem 15rem 4rem 0rem;
   color: var(--color-grey-000);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
+  ${({ theme }) => css`
+    @media (max-width: ${theme.breakpoints.medium}) {
+      margin: 0rem 0rem 0rem 0rem;
+    }
+  `}
 `;
 
 const Content = styled.div`
@@ -115,7 +120,7 @@ const Content = styled.div`
   }
 
   p:last-of-type {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 30px;
   }
 
@@ -132,8 +137,9 @@ const Content = styled.div`
     }
   
     p:last-of-type {
-      font-size: 15px;
+      font-size: 10px;
       line-height: 30px;
+      white-space: pre-wrap;
     }
 
     img {
