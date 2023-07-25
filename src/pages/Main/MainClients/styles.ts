@@ -98,7 +98,12 @@ const ContentBox = styled.div`
 
 =======
   margin: 13.9rem 15rem 4rem 0rem;
->>>>>>> parent of 818214c (edit 2)
+
+  ${({ theme }) => css`
+  @media (max-width: ${theme.breakpoints.medium}) {
+    margin: 13.9rem 0rem 4rem 0rem;
+  }
+`}
 `;
 
 const Content = styled.div`
