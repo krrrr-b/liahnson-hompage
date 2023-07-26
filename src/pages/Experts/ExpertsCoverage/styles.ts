@@ -8,7 +8,6 @@ const Wrapper = styled.div`
     @media (max-width: ${theme.breakpoints.medium}) {
       padding: 9.5rem 0;
       margin-bottom: 0rem;
-      overflow-x: hidden;
     }
   `}
 `;
@@ -58,14 +57,22 @@ const CoverageWrapper = styled.div`
   flex-wrap: wrap;
   width: 70%; 
   padding: 18rem 0rem;
+  overflow-x: hidden;
 
   ${({ theme }) => css`
   @media (max-width: ${theme.breakpoints.medium}) {
     margin-top: -50px;
     margin-bottom: -150px;
-    padding: 0px 0px 45% 0px;
     display: block;
-    padding-bottom: 500px;
+    padding-bottom: 270px;
+  }
+
+  &:nth-of-type(1) {
+    padding-bottom: 100px;
+  }
+
+  &:nth-of-type(7) {
+    padding-bottom: 330px;
   }
 `}
 `;
@@ -80,7 +87,7 @@ position: absolute;
 width:  781px;
 height: 781px;
 right: -30%;
-bottom: 17%;
+bottom: 10%;
 
 `;
 

@@ -3,7 +3,6 @@ import styled, { css } from 'styled-components';
 const Wrapper = styled.section`
   padding: 13rem 0;
   margin-bottom: -30rem;
-  overflow-x: hidden;
 
   ${({ theme }) => css`
     @media (max-width: ${theme.breakpoints.medium}) {
@@ -68,6 +67,7 @@ const SubTitle = styled.div`
 
   ${({ theme }) => css`
     @media (max-width: ${theme.breakpoints.medium}) {
+      font-size: 15px;
       display: flex;
       align-items: center;
       gap: 1rem;
@@ -98,7 +98,20 @@ const SubDescriptionList = styled.ul`
   `}
 `;
 
-const SubDescriptionItem = styled.li``;
+const SubDescriptionItem = styled.li`
+padding: 3.5rem;
+border-radius: 20px;
+box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.04);
+
+${({ theme }) => css`
+@media (max-width: ${theme.breakpoints.medium}) {
+  box-shadow: none;
+  border-radius: none;
+  padding: none;
+}
+`}
+
+`;
 
 const SubDescription = styled.p`
   padding: 0 3rem 0 2rem;
@@ -115,14 +128,12 @@ const SubDescription = styled.p`
 `;
 
 const SubDescriptionIconWrapper = styled.div`
-  margin-bottom: 3.5rem;
-  padding-bottom: 3rem;
-  border-bottom: 0.3rem solid var(--color-red-500);
+  margin-bottom: 1.5em;
 
   ${({ theme }) => css`
     @media (max-width: ${theme.breakpoints.medium}) {
-      border: 0;
       padding-bottom: 0;
+      margin-bottom: 2rem;
     }
   `}
 `;
@@ -150,9 +161,13 @@ const CoverageWrapper = styled.div`
   @media (max-width: ${theme.breakpoints.medium}) {
     margin-top: -50px;
     margin-bottom: -150px;
-    padding: 0px 0px 45% 0px;
     display: block;
-    padding-bottom: 500px;
+    padding: 0px 0px 400px 0px;
+    overflow-x: hidden;
+
+    &:nth-of-type(1) {
+      padding: 0px 0px 180px 0px;
+    }
   }
 `}
 `;
@@ -183,6 +198,15 @@ const CoverageBox = styled.div`
   `}
 `;
 
+const IconDiv = styled.div`
+    padding: 7px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--color-red-500);
+    text-align: center;
+`;
+
 export default {
   Wrapper,
   TitleWrapper,
@@ -199,5 +223,6 @@ export default {
   CoverageBox,
   ImageBox,
   CoverageWrapper,
-  CoverageImage
+  CoverageImage,
+  IconDiv
 };

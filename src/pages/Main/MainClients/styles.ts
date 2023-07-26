@@ -147,11 +147,11 @@ const Content = styled.div`
       font-size: 48px;
     }
   
-    p:last-of-type {
-      font-size: 12px;
-      line-height: 30px;
-      white-space: pre-wrap;
-    }
+      p:last-of-type {
+        font-size: 12px;
+        line-height: 30px;
+        white-space: pre-wrap;
+      }
 
     img {
       width: 20%;

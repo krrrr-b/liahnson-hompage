@@ -25,43 +25,43 @@ export default function ExpertsCoverage(): ReturnType<React.FunctionComponent> {
       img: isKoKR ? MobileCoverageGlobal : MobileCoverageGlobal,
       left: isKoKR ? '10px' : '10px',
       imgWidth: isKoKR ? '170%' : '170%',
-      imgleft: isKoKR ? '33%' : '33%',
+      imgleft: isKoKR ? '40%' : '40%',
       imgTop: isKoKR ? '-100px' : '-100px',
     },
     {
       score: isKoKR ? '450k+': '450k+',
       label: isKoKR ? '한국 전문가 규모' : 'Experts in Korea',
       img: isKoKR ? MobileKorea : MobileKorea,
-      left: isKoKR ? '55%' : '55%',
-      imgWidth: isKoKR ? '159%' : '159%',
-      imgleft: isKoKR ? '60%' : '60%',
+      left: isKoKR ? '53%' : '53%',
+      imgWidth: isKoKR ? '140%' : '140%',
+      imgleft: isKoKR ? '70%' : '70%',
       imgTop: isKoKR ? '-184px' : '-184px',
     },
     {
       score: isKoKR ? '60+' : '60+',
       label: isKoKR ? '전문가 산업 분야' : 'Industry coverage',
       img: isKoKR ? MobileIndustry : MobileIndustry,
-      left: isKoKR ? '27%' : '27%',
-      imgWidth: isKoKR ? '250%' : '250%',
-      imgleft: isKoKR ? '-230%' : '-230%',
-      imgTop: isKoKR ? '-185%' : '-185%',
+      left: isKoKR ? '22%' : '22%',
+      imgWidth: isKoKR ? '205%' : '205%',
+      imgleft: isKoKR ? '-160%' : '-160%',
+      imgTop: isKoKR ? '-146%' : '-146%',
     },
     {
       score: isKoKR ? '50+' : '50+',
       label: isKoKR ? '전문가 국가' : 'Cuntry coverage',
       img: isKoKR ? MobileGlobalExperts : MobileGlobalExperts,
-      left: isKoKR ? '60%' : '60%',
-      imgWidth: isKoKR ? '230%' : '230%',
-      imgleft: isKoKR ? '60%' : '60%',
-      imgTop: isKoKR ? '-110px' : '-110px',
+      left: isKoKR ? '40%' : '40%',
+      imgWidth: isKoKR ? '220%' : '220%',
+      imgleft: isKoKR ? '59%' : '59%',
+      imgTop: isKoKR ? '-92px' : '-92px',
     },
     {
       score: isKoKR ? '10+' : '10+',
       label: isKoKR ? '파트너쉽을 체결한 글로벌 파트너사' : 'Global partner companies with established partnerships',
       img: isKoKR ? MobilePartners : MobilePartners,
-      imgWidth: isKoKR ? '70%' : '70%',
-      left: isKoKR ? '15%' : '15%',
-      imgleft: isKoKR ? '-55%' : '-55%',
+      imgWidth: isKoKR ? '105%' : '105%',
+      left: isKoKR ? '19%' : '19%',
+      imgleft: isKoKR ? '-74%' : '-74%',
       imgTop: isKoKR ? '-95px' : '-95px',
     },
     {
@@ -74,6 +74,7 @@ export default function ExpertsCoverage(): ReturnType<React.FunctionComponent> {
       imgTop: isKoKR ? '-100px' : '-100px',
     },
   ];
+
 
   const PcCoverage = [
     {
@@ -198,8 +199,8 @@ export default function ExpertsCoverage(): ReturnType<React.FunctionComponent> {
           {isMobile && mobileCoverage.map(item => 
           (<S.CoverageWrapper key={item.label}>
           <S.CoverageBox style={{ left: item.left}}>
-          <p style={{ fontSize: '48px'}}>{item.score}</p>
-          <p style={{ fontSize: '15px'}}>{item.label}</p>  
+          <p style={{ fontSize: '48px', wordBreak: 'keep-all'}} >{item.score}</p>
+          <p style={{ fontSize: '15px', wordBreak: 'keep-all'}}>{item.label}</p>  
           <S.CoverageImage src={item.img} alt={item.label} style={{left: item.imgleft, width: item.imgWidth, top: item.imgTop }}></S.CoverageImage>
           </S.CoverageBox>
            </S.CoverageWrapper>))}

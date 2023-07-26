@@ -114,13 +114,13 @@ export default function MainClients(): ReturnType<React.FunctionComponent> {
       img: project,
       score: '100k',
       span: '+',
-      label: i18n.language === "ko" ? '누적 프로젝트 수' : 'The cumulative number of projects'
+      label: i18n.language === "ko" ? '누적 프로젝트 수' : 'The cumulative number of\nprojects'
     },
     {
       img: callender,
       score: '11k',
       span: '+',
-      label: i18n.language === "ko" ? '연평균 수행 프로젝트 수' : 'Average number of projects per year'
+      label: i18n.language === "ko" ? '연평균 수행 프로젝트 수' : 'Average number of projects\n per year'
     },
     {
       img: industry,
@@ -138,16 +138,16 @@ export default function MainClients(): ReturnType<React.FunctionComponent> {
       img: people,
       score: '600',
       span: '+',
-      label: i18n.language === "ko" ? '누적 누적 고객 수' : 'The cumulative number of clients'
+      label: i18n.language === "ko" ? '누적 누적 고객 수' : 'The cumulative number of\n clients'
     },
     {
       img: people2,
       score: '80',
       span: '+',
-      label: i18n.language === "ko" ? '연평균 신규 고객 수' : 'Annual average number of' + '\n' + 'clients acquisitions'
+      label: i18n.language === "ko" ? '연평균 신규 고객 수' : 'Annual average number of\n clients acquisitions'
     },
-
   ]
+  
   return (
     <S.Wrapper>
       <Container>
