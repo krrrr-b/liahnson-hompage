@@ -140,7 +140,7 @@ const Content = styled.div`
     width: 50%;
 
     &:nth-child(2), &:nth-child(3), &:nth-child(5), &:nth-child(6) {
-      padding-left: 0;
+      padding-left: 5px;
     }
 
     p:first-of-type {
@@ -148,7 +148,7 @@ const Content = styled.div`
     }
   
     p:last-of-type {
-      font-size: 10px;
+      font-size: 12px;
       line-height: 30px;
       white-space: pre-wrap;
     }
