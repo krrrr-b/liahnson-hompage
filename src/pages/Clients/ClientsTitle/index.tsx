@@ -107,37 +107,37 @@ const imagesData = [
       img: project,
       score: '100k',
       span: '+',
-      label: i18n.language === "ko" ? '누적 프로젝트 수' : 'The cumulative number of\nprojects'
+      label: i18n.language === "ko" ? '누적 프로젝트 수' : 'Projects Completed'
     },
     {
       img: callender,
       score: '11k',
       span: '+',
-      label: i18n.language === "ko" ? '연평균 수행 프로젝트 수' : 'Average number of projects\n per year'
+      label: i18n.language === "ko" ? '연평균 수행 프로젝트 수' : 'Projects per Year'
     },
     {
       img: industry,
       score: '50',
       span: '+',
-      label: i18n.language === "ko" ? '고객 산업 분야' : 'Client industry sectors'
+      label: i18n.language === "ko" ? '고객 산업 분야' : 'Industries Covered'
     },
     {
       img: handshake,
       score: '99',
       span: '%',
-      label: i18n.language === "ko" ? '재계약율' : 'Re-contracting rate'
+      label: i18n.language === "ko" ? '재계약율' : 'Contract Renewal Rate'
     },
     {
       img: people,
       score: '600',
       span: '+',
-      label: i18n.language === "ko" ? '누적 누적 고객 수' : 'The cumulative number of\n clients'
+      label: i18n.language === "ko" ? '누적 누적 고객 수' : 'Clients'
     },
     {
       img: people2,
       score: '80',
       span: '+',
-      label: i18n.language === "ko" ? '연평균 신규 고객 수' : 'Annual average number of\n clients acquisitions'
+      label: i18n.language === "ko" ? '연평균 신규 고객 수' : 'New Clients per Year'
     },
 
   ]

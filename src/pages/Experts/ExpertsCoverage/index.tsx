@@ -20,8 +20,8 @@ export default function ExpertsCoverage(): ReturnType<React.FunctionComponent> {
   const isKoKR = i18n.language === "ko";
   const mobileCoverage = [
     {
-      score: isKoKR ? '80k+' : '80k+',
-      label: isKoKR ? '글로벌 전문가 규모' : 'Overseas experts',
+      score: isKoKR ? '300k+' : '300k+',
+      label: isKoKR ? '글로벌 전문가 규모' : 'Global Experts',
       img: isKoKR ? MobileCoverageGlobal : MobileCoverageGlobal,
       left: isKoKR ? '10px' : '10px',
       imgWidth: isKoKR ? '170%' : '170%',
@@ -29,8 +29,8 @@ export default function ExpertsCoverage(): ReturnType<React.FunctionComponent> {
       imgTop: isKoKR ? '-100px' : '-100px',
     },
     {
-      score: isKoKR ? '450k+': '450k+',
-      label: isKoKR ? '한국 전문가 규모' : 'Experts in Korea',
+      score: isKoKR ? '4.5m+': '4.5m+',
+      label: isKoKR ? '한국 전문가 규모' : 'Korean Experts',
       img: isKoKR ? MobileKorea : MobileKorea,
       left: isKoKR ? '53%' : '53%',
       imgWidth: isKoKR ? '140%' : '140%',
@@ -39,7 +39,7 @@ export default function ExpertsCoverage(): ReturnType<React.FunctionComponent> {
     },
     {
       score: isKoKR ? '60+' : '60+',
-      label: isKoKR ? '전문가 산업 분야' : 'Industry coverage',
+      label: isKoKR ? '전문가 산업 분야' : 'Industries Covered',
       img: isKoKR ? MobileIndustry : MobileIndustry,
       left: isKoKR ? '22%' : '22%',
       imgWidth: isKoKR ? '205%' : '205%',
@@ -48,7 +48,7 @@ export default function ExpertsCoverage(): ReturnType<React.FunctionComponent> {
     },
     {
       score: isKoKR ? '50+' : '50+',
-      label: isKoKR ? '전문가 국가' : 'Cuntry coverage',
+      label: isKoKR ? '전문가 국가' : 'Countries Covered',
       img: isKoKR ? MobileGlobalExperts : MobileGlobalExperts,
       left: isKoKR ? '40%' : '40%',
       imgWidth: isKoKR ? '220%' : '220%',
@@ -57,7 +57,7 @@ export default function ExpertsCoverage(): ReturnType<React.FunctionComponent> {
     },
     {
       score: isKoKR ? '10+' : '10+',
-      label: isKoKR ? '파트너쉽을 체결한 글로벌 파트너사' : 'Global partner companies with established partnerships',
+      label: isKoKR ? '파트너쉽을 체결한 글로벌 파트너사' : 'Global Partners',
       img: isKoKR ? MobilePartners : MobilePartners,
       imgWidth: isKoKR ? '105%' : '105%',
       left: isKoKR ? '19%' : '19%',
@@ -66,7 +66,7 @@ export default function ExpertsCoverage(): ReturnType<React.FunctionComponent> {
     },
     {
       score: isKoKR ? '8+' : '8+',
-      label: isKoKR ? '평균 전문가 산업 경력' : 'Average experience of experts',
+      label: isKoKR ? '평균 전문가 산업 경력' : 'Expert Average Experience in Years',
       img: isKoKR ? MobileExperience : MobileExperience,
       imgWidth: isKoKR ? '180%' : '180%',
       left: isKoKR ? '62%' : '62%',
@@ -78,33 +78,33 @@ export default function ExpertsCoverage(): ReturnType<React.FunctionComponent> {
 
   const PcCoverage = [
     {
-      score: isKoKR ? '80k' : '80k',
-      label: isKoKR ? '글로벌 전문가 규모' : 'Overseas experts',
+      score: isKoKR ? '300k' : '300k',
+      label: isKoKR ? '글로벌 전문가 규모' : 'Global Experts',
       img: isKoKR ? MobileCoverageGlobal : MobileCoverageGlobal,
     },
     {
-      score: isKoKR ? '450k': '450k',
-      label: isKoKR ? '한국 전문가 규모' : 'Experts in Korea',
+      score: isKoKR ? '4.5m': '4.5m',
+      label: isKoKR ? '한국 전문가 규모' : 'Korean Experts',
       img: isKoKR ? MobileKorea : MobileKorea,
     },
     {
       score: isKoKR ? '60' : '60',
-      label: isKoKR ? '전문가 산업 분야' : 'Industry coverage',
+      label: isKoKR ? '전문가 산업 분야' : 'Industries Covered',
       img: isKoKR ? MobileIndustry : MobileIndustry,
     },
     {
-      score: isKoKR ? '50' : '50',
-      label: isKoKR ? '전문가 국가' : 'Cuntry coverage',
+      score: isKoKR ? '100' : '100',
+      label: isKoKR ? '전문가 국가' : 'Countries Covered',
       img: isKoKR ? MobileGlobalExperts : MobileGlobalExperts,
     },
     {
       score: isKoKR ? '10' : '10',
-      label: isKoKR ? '파트너쉽을 체결한 글로벌 파트너사' : 'Global partner companies with established partnerships',
+      label: isKoKR ? '파트너쉽을 체결한 글로벌 파트너사' : 'Global Partners',
       img: isKoKR ? MobilePartners : MobilePartners,
     },
     {
-      score: isKoKR ? '8' : '8',
-      label: isKoKR ? '평균 전문가 산업 경력' : 'Average experience of experts',
+      score: isKoKR ? '15' : '15',
+      label: isKoKR ? '평균 전문가 산업 경력' : 'Expert Average Experience in Years',
       img: isKoKR ? MobileExperience : MobileExperience,
     },
   ];
