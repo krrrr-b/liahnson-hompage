@@ -138,6 +138,7 @@ const ScrollAnimation = styled.span`
   &::after {
     content: '';
     position: absolute;
+    word-break: break-word;
     display: inline-block;
     width: 1px;
     height: 15.8rem;

@@ -108,6 +108,7 @@ const NavListItem = styled.li`
 const LinkItem = styled(NavLink)<{ theme?: string }>`
   position: relative;
   display: inline-block;
+  word-break: break-word;
   color: ${({ theme }) =>
     theme === 'dark' ? 'var(--color-grey-000)' : 'var(--color-grey-800)'};
 
@@ -146,6 +147,7 @@ const LinkItem = styled(NavLink)<{ theme?: string }>`
 
 const LinkItemDiv = styled.div<{ theme?: string }>`
   position: relative;
+  word-break: break-word;
   display: inline-block;
   color: ${({ theme }) =>
     theme === 'dark' ? 'var(--color-grey-000)' : 'var(--color-grey-800)'};

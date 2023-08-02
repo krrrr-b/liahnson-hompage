@@ -68,6 +68,7 @@ export default function Header(): ReturnType<React.FunctionComponent> {
       );
 
       if (pathList.includes(page)) {
+        console.log(page);
         navigate(page);
       }
     }
