@@ -222,8 +222,7 @@ export default function Terms(): ReturnType<React.FunctionComponent> {
     <S.Description>
       <h3>ENTIRE AGREEMENT</h3>
       <br />
-      It is agreed that there is no representation, warranty, collateral agreement or condition affecting this
-      Agreement except as expressively provided in this Agreement.
+      It is agreed that there is no representation, warranty, collateral agreement or condition affecting this Agreement except as expressively provided in this Agreement.
       End of Terms & Conditions © 2023 Liahnson & Company, Inc. All rights reserved.
     </S.Description>
   </S.DescriptionWrapper>

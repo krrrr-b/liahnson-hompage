@@ -103,8 +103,8 @@ export default function AboutVision(): ReturnType<React.FunctionComponent> {
       </Container>
       <S.BackgroundWrapper>
         <BackgroundText
-          upper='We Bring'
-          lower='Experts To Life'
+          upper='we bring value'
+          lower='through expertise'
           lowerMobilePosition='2rem'
           color='var(--color-black-040)'
         />

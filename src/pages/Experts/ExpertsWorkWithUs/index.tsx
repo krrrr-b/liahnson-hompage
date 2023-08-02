@@ -20,7 +20,7 @@ export default function ExpertsTitle(): ReturnType<React.FunctionComponent> {
     },    {
       index: '03',
       title: isKR ? '스크리닝' : 'Screening',
-      content: isKR ? '프로젝트 확인 및 스크리닝 질문에 대한 피드백을 보내주시면 고객사와 최종 진행 여부를 확인하여 일정을 조율드립니다.' : 'Upon your review of the project and your feedback on the screening questions, we will confirm with the client whether they want to proceed with the consultation and sched ule it accordingly.'
+      content: isKR ? '프로젝트 확인 및 스크리닝 질문에 대한 피드백을 보내주시면 고객사와 최종 진행 여부를 확인하여 일정을 조율드립니다.' : 'Upon your review of the project and your feedback on the screening questions, we will confirm with the client whether they want to proceed with the consultation and schedule it accordingly.'
     },
     {
       index: '04',
@@ -33,7 +33,7 @@ export default function ExpertsTitle(): ReturnType<React.FunctionComponent> {
     <S.Title>
       <Container>
         <Inner>
-          <S.TitleText>How experts work with us</S.TitleText>
+          <S.TitleText>How Experts Work With Us</S.TitleText>
           
           { howWork.map(item => (
             <S.DescriptionBox key={item.index}>

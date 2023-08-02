@@ -52,7 +52,7 @@ export default function ServiceStrength(): ReturnType<React.FunctionComponent> {
   return (
     <S.Strength>
       <BackgroundText
-        upper='Unlock the'
+        upper='unlock the'
         lower='power of knowledge'
         color='var(--color-grey-000)'
       />

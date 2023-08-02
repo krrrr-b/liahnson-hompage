@@ -117,7 +117,7 @@ export default function HoverList(): ReturnType<React.FunctionComponent> {
               <S.Title>{i18n.language === "ko" ? '및 분포' : 'in our network' }</S.Title>
             </>
           ) : (
-            <S.Title>{i18n.language === "ko" ? '전문가 산업 분류 및 분포' : 'Experts by industry in our network' }</S.Title>
+            <S.Title>{i18n.language === "ko" ? '전문가 산업 분류 및 분포' : 'Experts by Industry in Our Network' }</S.Title>
           )}
         </S.Inner>
       </S.Container>
