@@ -17,20 +17,20 @@ export default function Compliance(): ReturnType<React.FunctionComponent> {
       쿠키는 장치에 저장되는 작은 텍스트 파일로, 우리가 제공하는 서비스를 개선하고 더 효율적으로 사용할 수 있게 합니다. 장치와 브라우저를 인식하고, 서비스 개선에 중요한 정보를 저장할 수 있도록 합니다.
       <br /><br />
       <h3>쿠키의 종류 </h3>
-      ● 세션 쿠키와 지속 쿠키<br />
+      세션 쿠키와 지속 쿠키<br />
       - 세션 쿠키는 웹사이트를 방문하는 동안 장치의 메모리에 일시적으로 저장되며, 브라우저를 닫으면 지워집니다.<br />
       - 지속 쿠키는 일정 기간 동안 저장되며, 기간은 쿠키마다 다릅니다. 세션 쿠키보다는 더 오래 지속되지만, 몇 개월 후에는 만료됩니다. 이를 통해 이전에 웹사이트나 비슷한 사이트를 방문한 적이 있는지 알 수 있습니다.<br />
       <br />
-      ● 1자 쿠키와 3자 쿠키<br />
+      1자 쿠키와 3자 쿠키<br />
       - 1자 쿠키는 웹사이트나 웹사이트의 하위 도메인에서 직접 설정됩니다.<br />
       - 3자 쿠키는 저희가 관리하지 않는 웹사이트, 우리의 하청업체 또는 기술 파트너가 설정하는 쿠키입니다.<br />
       <br />
       <h3>쿠키를 어떻게 사용하나요? </h3>
-      ● 웹사이트에서 로그인하는 옵션: 웹사이트에서 인증을 받아 로그인 세션을 유지하고 로그인 정보를 저장합니다. <br />
-      ● 탭 정보: 웹사이트의 탭 또는 특정 부분을 추적합니다. <br />
-      ● 지역별 콘텐츠: 지역에 맞는 콘텐츠를 제공하고 시간대 설정을 기록합니다. <br />
-      ● 언어 설정: 표시되는 콘텐츠의 언어를 선택하고 기억합니다. <br />
-      ● 기기 기능: 사용 중인 브라우저 기기에 따라 다양한 콘텐츠를 제공할 수 있는 기능입니다.<br />
+      웹사이트에서 로그인하는 옵션: 웹사이트에서 인증을 받아 로그인 세션을 유지하고 로그인 정보를 저장합니다. <br />
+      탭 정보: 웹사이트의 탭 또는 특정 부분을 추적합니다. <br />
+      지역별 콘텐츠: 지역에 맞는 콘텐츠를 제공하고 시간대 설정을 기록합니다. <br />
+      언어 설정: 표시되는 콘텐츠의 언어를 선택하고 기억합니다. <br />
+      기기 기능: 사용 중인 브라우저 기기에 따라 다양한 콘텐츠를 제공할 수 있는 기능입니다.<br />
       <br />
       <h3>어떤 쿠키를 사용하나요? </h3>
       <b>필수 쿠키</b><br />
@@ -54,13 +54,13 @@ export default function Compliance(): ReturnType<React.FunctionComponent> {
       <b>쿠키 차단하는 방법</b><br />
       쿠키 차단하는 방법 쿠키 및 기타 추적 기술(픽셀 태그 등)의 배치를 중지하거나 제한할 수 있습니다. 이는 기기에서 차단하거나 삭제하고 브라우저의 기본 설정을 조정함으로써 수행할 수 있습니다. 이는 기기 및 브라우저에따라 달라질 수 있습니다. 아래 링크에서 가장 인기 있는 브라우저의 웹 브라우저 설정을 수정하는 방법에 대한안내를 참조하세요:<br />
       <br />
-      ● Microsoft Edge <br />
-      ● Internet Explorer <br />
-      ● Mozilla Firefox <br />
-      ● Google Chrome <br />
-      ● Apple Safari <br />
-      ● Opera <br />
-      ● Netscape<br />
+      Microsoft Edge <br />
+      Internet Explorer <br />
+      Mozilla Firefox <br />
+      Google Chrome <br />
+      Apple Safari <br />
+      Opera <br />
+      Netscape<br />
       <br />
       쿠키를 올바르게 브라우저에서 차단하면 웹사이트의 일부가 사용할 수 없거나 제대로 작동하지 않을 수 있습니다.<br />
       <br />
@@ -98,29 +98,29 @@ export default function Compliance(): ReturnType<React.FunctionComponent> {
       <br/><br/>
       <h3>Types of cookies.</h3>
       <br/>
-      ● Session Cookies and Persistent Cookies<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○ Session cookies are stored temporarily on the memory of your devices while
+      Session Cookies and Persistent Cookies<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Session cookies are stored temporarily on the memory of your devices while
       you are visiting the website and are erased once you close your browser.<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○ Persistent Cookies are stored for a predetermined amount of time, which
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Persistent Cookies are stored for a predetermined amount of time, which
       varies from cookie to cookie. It is longer than the session cookies; however
       they also expire after some months. They aid us to understand whether you
       have previously visited our website or similar sites in the past.<br/><br/>
-      ● First Party and Third Party Cookies<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○ First Party cookies are set directly by the website or by any of the subdomains
+      First Party and Third Party Cookies<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- First Party cookies are set directly by the website or by any of the subdomains
       of the website.<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○ Third Party cookies are set by websites not managed by us, such as our
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Third Party cookies are set by websites not managed by us, such as our
       subprocessores or other technology partners.<br/><br/>
       
       <h3>How do we use cookies?</h3>
-      ● options for logging in that will authenticate you on the website, keep your login
+      options for logging in that will authenticate you on the website, keep your login
       session active, and remember how you prefer to store your login information;<br/>
-      ● tabbed information that keeps track of the tab or specific part of the website you are
+      tabbed information that keeps track of the tab or specific part of the website you are
       looking at;<br/>
-      ● regional content to deliver material specific to a region and keep track of time zone
+      regional content to deliver material specific to a region and keep track of time zone
       settings;<br/>
-      ● language preferences to choose and remember the language in which material is
+      language preferences to choose and remember the language in which material is
       shown;<br/>
-      ● the capability of the device to deliver various content depending on the browser
+      the capability of the device to deliver various content depending on the browser
       device being used;<br/><br/>
       
       <h3>What cookies do we use?</h3><br/>
@@ -163,13 +163,13 @@ export default function Compliance(): ReturnType<React.FunctionComponent> {
       browser.
       Please see the links below for guidance on how to modify your web browser’s settings on
       the most popular browsers:<br/><br/>
-      ● <a href="https://allaboutcookies.org/how-to-clear-cookies-microsoft-edge">Microsoft Edge</a><br/>
-      ● <a href="https://allaboutcookies.org/how-to-clear-cookies-microsoft-edge">Internet Explorer</a><br/>
-      ● <a href="https://allaboutcookies.org/how-to-clear-cookies-firefox">Mozilla Firefox</a><br/>
-      ● <a href="https://allaboutcookies.org/how-to-clear-cookies-chrome">Google Chrome</a><br/>
-      ● <a href="https://allaboutcookies.org/how-to-clear-cookies-safari">Apple Safari</a><br/>
-      ● <a href="https://allaboutcookies.org/how-to-clear-cookies-opera">Opera</a><br/>
-      ● <a href="https://allaboutcookies.org/how-to-clear-cookies-netscape">Netscape</a><br/><br/>
+      <a href="https://allaboutcookies.org/how-to-clear-cookies-microsoft-edge">Microsoft Edge</a><br/>
+      <a href="https://allaboutcookies.org/how-to-clear-cookies-microsoft-edge">Internet Explorer</a><br/>
+      <a href="https://allaboutcookies.org/how-to-clear-cookies-firefox">Mozilla Firefox</a><br/>
+      <a href="https://allaboutcookies.org/how-to-clear-cookies-chrome">Google Chrome</a><br/>
+      <a href="https://allaboutcookies.org/how-to-clear-cookies-safari">Apple Safari</a><br/>
+      <a href="https://allaboutcookies.org/how-to-clear-cookies-opera">Opera</a><br/>
+      <a href="https://allaboutcookies.org/how-to-clear-cookies-netscape">Netscape</a><br/><br/>
       Once you correctly block cookies on your browser, parts of the website may become
       unavailable to you or may otherwise not function properly.<br/><br/>
       <h3>How to opt-out of third-party cookies and targeted ads.</h3>
