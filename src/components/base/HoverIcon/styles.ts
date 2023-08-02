@@ -37,7 +37,7 @@ const Title = styled.p<{
 }>`
   position: relative;
   padding: 2.2rem 0;
-  width: 31rem;
+  width: 31.5rem;
   font-weight: 510;
   font-size: 3rem;
   line-height: 3.6rem;
@@ -93,7 +93,7 @@ const Title = styled.p<{
 `;
 
 const Wrapper = styled.a<{ isHover: boolean; isSelected: boolean }>`
-  width: 31rem;
+  width: 31.5rem;
 
   transition: opacity 1.1s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition-delay: 0.15s;
