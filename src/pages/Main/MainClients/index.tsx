@@ -196,7 +196,8 @@ export default function MainClients(): ReturnType<React.FunctionComponent> {
                 color={BUTTON_COLORS.WHITE}
                 onClick={() => {
                   if (isMobile) {
-                    window.location.href = LINKS.TYPE_FORM_CLIENTS;
+                    // window.location.href = LINKS.TYPE_FORM_CLIENTS;
+                    window.open(LINKS.TYPE_FORM_CLIENTS, "_blank");
                   } else {
                     window.open(LINKS.TYPE_FORM_CLIENTS, "_blank", "width=1024, height=720; noopener, noreferrer");
                   }

@@ -6,10 +6,13 @@ import MediaQueryContext from 'contexts/MediaQueryContext';
 import S from 'pages/About/AboutTitle/styles';
 import { useContext } from 'react';
 import { useTranslation } from "react-i18next";
+import i18n from "languages/i18n";
 
 export default function AboutTitle(): ReturnType<React.FunctionComponent> {
   const { isMobile } = useContext(MediaQueryContext);
   const { t } = useTranslation();
+
+  const isKorean = i18n.language === "ko";
 
   return (
     <S.Title>
@@ -19,12 +22,21 @@ export default function AboutTitle(): ReturnType<React.FunctionComponent> {
           <S.DescriptionBox>
             <S.Description style={{wordBreak: 'keep-all'}}>
             <p>{isMobile ? (<></>) : t('main_page_about_1')}</p>&nbsp;
-              <Icon
+            {isMobile ? (
+                isKorean ? <Icon
                 name={IconName.RememberFilled}
                 width={isMobile ? '16.4rem' : '27.8rem'}
                 height={isMobile ? '2.7rem' : '4.6rem'}
                 color={BUTTON_COLORS.WHITE}
-              />&nbsp;
+              /> : <></>
+              ) : (
+                <Icon
+                name={IconName.RememberFilled}
+                width={isMobile ? '16.4rem' : '27.8rem'}
+                height={isMobile ? '2.7rem' : '4.6rem'}
+                color={BUTTON_COLORS.WHITE}
+              />
+              )}
               <p>{t('main_page_about_1_5')}</p>
             </S.Description>
             <S.Description style={{wordBreak: 'keep-all'}}>

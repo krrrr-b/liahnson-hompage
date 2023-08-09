@@ -75,11 +75,7 @@ export default function BlurScroll(): ReturnType<React.FunctionComponent> {
     { content: t('A2') },
     {
       content: t('A3'),
-    },
-    {
-      content:
-      t('A3'),
-    },
+    }
   ];
 
   return (

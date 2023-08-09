@@ -11,6 +11,7 @@ import { useNavigate } from 'react-router-dom';
 import { LINKS } from 'components/base/Link/constants';
 import { useTranslation } from "react-i18next";
 import mainPageVideo from 'assets/images/mainPageVideo.mov';
+import i18n from "languages/i18n";
 
 export default function MainTitle(): ReturnType<React.FunctionComponent> {
   const { t } = useTranslation()
@@ -20,6 +21,8 @@ export default function MainTitle(): ReturnType<React.FunctionComponent> {
   const routeChange = (path: string) => {
     navigate(path);
   }
+
+  const isKorean = i18n.language === "ko";
 
   return (
     <S.Title>
@@ -41,7 +44,8 @@ export default function MainTitle(): ReturnType<React.FunctionComponent> {
                     fontSize='1.5rem'
                     onClick={() => {
                       if (isMobile) {
-                        window.location.href = LINKS.TYPE_FORM_CLIENTS;
+                        // window.location.href = LINKS.TYPE_FORM_CLIENTS;
+                        window.open(LINKS.TYPE_FORM_CLIENTS, "_blank");
                       } else {
                         window.open(LINKS.TYPE_FORM_CLIENTS, "_blank", "width=1024, height=720; noopener, noreferrer");
                       }
@@ -55,7 +59,8 @@ export default function MainTitle(): ReturnType<React.FunctionComponent> {
                     fontSize='1.5rem'
                     onClick={() => {
                       if (isMobile) {
-                        window.location.href = LINKS.TYPE_FORM_EXPERTS;
+                        // window.location.href = LINKS.TYPE_FORM_EXPERTS;
+                        window.open(LINKS.TYPE_FORM_EXPERTS, "_blank");
                       } else {
                         window.open(LINKS.TYPE_FORM_EXPERTS, "_blank", "width=1024, height=720; noopener, noreferrer");
                       }
@@ -73,7 +78,8 @@ export default function MainTitle(): ReturnType<React.FunctionComponent> {
                     fontSize='2.5rem'
                     onClick={() => {
                       if (isMobile) {
-                        window.location.href = LINKS.TYPE_FORM_CLIENTS;
+                        // window.location.href = LINKS.TYPE_FORM_CLIENTS;
+                        window.open(LINKS.TYPE_FORM_CLIENTS, "_blank");
                       } else {
                         window.open(LINKS.TYPE_FORM_CLIENTS, "_blank", "width=1024, height=720; noopener, noreferrer");
                       }
@@ -87,7 +93,8 @@ export default function MainTitle(): ReturnType<React.FunctionComponent> {
                     fontSize='2.5rem'
                     onClick={() => {
                       if (isMobile) {
-                        window.location.href = LINKS.TYPE_FORM_EXPERTS;
+                        // window.location.href = LINKS.TYPE_FORM_EXPERTS;
+                        window.open(LINKS.TYPE_FORM_EXPERTS, "_blank");
                       } else {
                         window.open(LINKS.TYPE_FORM_EXPERTS, "_blank", "width=1024, height=720; noopener, noreferrer");
                       }
@@ -112,7 +119,7 @@ export default function MainTitle(): ReturnType<React.FunctionComponent> {
             <S.DescriptionTitle style={{wordBreak: 'keep-all'}}>
               {isMobile ? (<></>) : t('main_page_about_1')}
               {isMobile ? (
-                <Icon name={IconName.Remember} width='14rem' height='2.2rem' />
+                isKorean ? <Icon name={IconName.Remember} width='14rem' height='2.2rem' /> : <></>
               ) : (
                 <Icon name={IconName.Remember} width='25rem' height='4.1rem' />
               )}

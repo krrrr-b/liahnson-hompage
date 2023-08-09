@@ -64,7 +64,7 @@ const CarouselItem = styled.div`
     @media (max-width: ${theme.breakpoints.medium}) {
       padding: 4.8rem 3.4rem;
       width: 33rem;
-      height: 50rem;
+      height: 60rem;
     }
   `}
 `;

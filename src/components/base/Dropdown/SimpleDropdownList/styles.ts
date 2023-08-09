@@ -14,13 +14,13 @@ const Wrapper = styled.div`
 const DropdownTitle = styled.p`
   width: max-content;
   color: var(--color-grey-000);
-  font-weight: 510;
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
   ${({ theme }) => css`
     @media (max-width: ${theme.breakpoints.medium}) {
-      font-weight: 510;
+      font-weight: 710;
       font-size: 15px;
       line-height: 18px;
     }

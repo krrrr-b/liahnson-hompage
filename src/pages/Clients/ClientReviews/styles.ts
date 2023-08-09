@@ -121,17 +121,9 @@ const TextContainerTitle = styled.div`
 `;
 
 const TextContainerTitleText = styled.p`
-  margin-bottom: 6.3rem;
   padding-right: 1rem;
-  max-height: 32rem;
   -webkit-line-clamp: 8;
   -webkit-box-orient: vertical;
-
-  ${({ theme }) => css`
-  @media (max-width: ${theme.breakpoints.medium}) {
-    margin-bottom: 14.3rem;
-  }
-`}
 `;
 
 const TextContainerAuthor = styled.p`
@@ -170,7 +162,7 @@ const Description = styled.p`
 
   ${({ theme }) => css`
     @media (max-width: ${theme.breakpoints.medium}) {
-      margin: -9.1rem 0 4.9rem;
+      margin: -3.1rem 0 4.9rem;
       font-weight: 400;
       font-size: 15px;
       line-height: 30px;

@@ -80,7 +80,8 @@ export default function AboutVision(): ReturnType<React.FunctionComponent> {
               width={isMobile ? '19rem' : ''}
               onClick={() => {
                 if (isMobile) {
-                  window.location.href = LINKS.TYPE_FORM_CLIENTS;
+                  // window.location.href = LINKS.TYPE_FORM_CLIENTS;
+                  window.open(LINKS.TYPE_FORM_CLIENTS, "_blank");
                 } else {
                   window.open(LINKS.TYPE_FORM_CLIENTS, "_blank", "width=1024, height=720; noopener, noreferrer");
                 }

@@ -21,7 +21,7 @@ export default function CareerImages(): ReturnType<React.FunctionComponent> {
           <S.Image1>
             <Flip
               width={isMobile ? '33rem' : '63rem'}
-              height={isMobile ? '43.3rem' : '75.6rem'}
+              height={isMobile ? '50rem' : '75.6rem'}
               imageURL={who_you_are}
               title='Who you are'
               content={[t('careers_desciption_1')]}
@@ -30,7 +30,7 @@ export default function CareerImages(): ReturnType<React.FunctionComponent> {
           <S.Image2>
             <Flip
               width={isMobile ? '33rem' : '63rem'}
-              height={isMobile ? '70.3rem' : '77.6rem'}
+              height={isMobile ? '75rem' : '77.6rem'}
               imageURL={what_will_you_learn}
               title='What will you learn'
               content={[t('careers_desciption_2'), t('careers_desciption_2_1')]}
@@ -41,7 +41,7 @@ export default function CareerImages(): ReturnType<React.FunctionComponent> {
               isVertical={!isMobile}
               isReactive={true}
               width={isMobile ? '33rem' : '130rem'}
-              height={isMobile ? isKorean ? '95rem' : '139rem' : '105rem'}
+              height={isMobile ? isKorean ? '100rem' : '143rem' : '105rem'}
               imageURL={how_you_will_grow}
               title='How you will grow'
               content={[t('careers_desciption_3'), t('careers_desciption_3_0'), t('careers_desciption_3_1'), t('careers_desciption_3_2'), t('careers_desciption_3_3')]}

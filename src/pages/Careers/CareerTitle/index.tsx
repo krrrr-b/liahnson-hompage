@@ -26,7 +26,7 @@ export default function CareerTitle(): ReturnType<React.FunctionComponent> {
               <S.DescriptionBox>
                 {isMobile ? (
                   <S.Description>
-                    Ready when you are - Accelerate with us
+                    A successful career is just one step away
                   </S.Description>
                 ) : (
                   <>

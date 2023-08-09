@@ -33,8 +33,6 @@ export default function HoverList(): ReturnType<React.FunctionComponent> {
         'Real Estate Investment',
         'Startup Accelerator',
         'Pension',
-        '',
-        '',
       ],
       score: '25%',
       color: '#484848',

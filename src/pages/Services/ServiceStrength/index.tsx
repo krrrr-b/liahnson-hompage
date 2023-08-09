@@ -94,7 +94,8 @@ export default function ServiceStrength(): ReturnType<React.FunctionComponent> {
                 color={BUTTON_COLORS.RED}
                 onClick={() => {
                   if (isMobile) {
-                    window.location.href = LINKS.TYPE_FORM_CLIENTS;
+                    // window.location.href = LINKS.TYPE_FORM_CLIENTS;
+                    window.open(LINKS.TYPE_FORM_CLIENTS, "_blank");
                   } else {
                     window.open(LINKS.TYPE_FORM_CLIENTS, "_blank", "width=1024, height=720; noopener, noreferrer");
                   }

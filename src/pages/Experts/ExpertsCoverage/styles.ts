@@ -8,6 +8,7 @@ const Wrapper = styled.div`
     @media (max-width: ${theme.breakpoints.medium}) {
       padding: 9.5rem 0;
       margin-bottom: 0rem;
+      overflow: hidden;
     }
   `}
 `;
