@@ -17,7 +17,6 @@ import Privacy from 'pages/Privacy';
 import ScrollToTop from 'components/base/ScrollToTop';
 import theme from 'styles/theme';
 import MediaQueryProvider from 'contexts/MediaQueryProvider';
-import './languages/i18n';
 
 function App() {
   return (

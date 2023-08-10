@@ -138,7 +138,7 @@ export default function MainClients(): ReturnType<React.FunctionComponent> {
       img: people,
       score: '600',
       span: '+',
-      label: i18n.language === "ko" ? '누적 누적 고객 수' : 'Clients'
+      label: i18n.language === "ko" ? '누적 고객 수' : 'Clients'
     },
     {
       img: people2,

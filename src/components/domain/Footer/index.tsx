@@ -26,9 +26,8 @@ export default function Footer(): ReturnType<React.FunctionComponent> {
   const { isMobile } = useContext(MediaQueryContext);
   const isMainPage = (location.pathname == '/') ? true : false;
   const { t } = useTranslation()
-  const [language, setLanguage] = useState<string>(i18n.language);
 
-  const isKorean = language === "ko";
+  const isKorean = i18n.language === "ko";
   const routeChange = (path: string) =>{
     navigate(path);
   }
@@ -47,20 +46,22 @@ export default function Footer(): ReturnType<React.FunctionComponent> {
       onClick: () => {
         i18n.changeLanguage("ko");
         pageChange("ko");
-        setLanguage("ko");
+        i18n.changeLanguage("ko");
+
         // window.location.reload();
       }, 
-      selected: language === "ko"
+      selected: i18n.language === "ko"
     },
     {
       label: 'Eng',
       onClick: () => {
         i18n.changeLanguage("en");
         pageChange("en");
-        setLanguage("en");
+        i18n.changeLanguage("en");
+
         // window.location.reload();
       },
-      selected: language === "en",
+      selected: i18n.language === "en",
     },
   ];
 

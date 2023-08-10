@@ -36,6 +36,14 @@ export default function Header(): ReturnType<React.FunctionComponent> {
   initializeScreen();
 
   useEffect(() => {
+    setInterval(() => {
+      if (i18n.language != language) {
+        setLanguage(i18n.language);
+      }
+    }, 1000);
+  }, [i18n.language]);
+
+  useEffect(() => {
     const newWidths = tabRefs.current.map(tabRef => {
       if (tabRef) {
         const computedStyle = getComputedStyle(tabRef, '::before');
@@ -86,8 +94,9 @@ export default function Header(): ReturnType<React.FunctionComponent> {
       onClick: () => {
         i18n.changeLanguage("ko");
         pageChange("ko");
-        setLanguage("ko");
-        // window.location.reload();
+        setLanguage('ko');
+
+        // setLanguage("ko");
       },
       selected: language === "ko"
     },
@@ -96,8 +105,8 @@ export default function Header(): ReturnType<React.FunctionComponent> {
       onClick: () => {
         i18n.changeLanguage("en");
         pageChange("en");
-        setLanguage("en");
-        // window.location.reload();
+        setLanguage('en');
+        // setLanguage("en");
       },
       selected: language === "en"
     },
@@ -114,7 +123,7 @@ export default function Header(): ReturnType<React.FunctionComponent> {
   const onClick = (e: React.MouseEvent, label: string = "") => {
     e.stopPropagation();
     setIsOpen(false);
-    pageChange(i18n.language, label);
+    pageChange(language, label);
   };
 
   return (
@@ -123,7 +132,7 @@ export default function Header(): ReturnType<React.FunctionComponent> {
         <Inner>
           <S.Wrapper>
             <S.Left ref={dropdownRef}>
-              <S.LogoLink to='/'  onClick={(e) => onClick(e, "main")}>
+              <S.LogoLink to='/' onClick={(e) => onClick(e, "main")}>
                 {isTablet ? (
                   isOpen ? (
                     <img src={mobileLightLogo} alt='liahnson logo' />
@@ -145,8 +154,8 @@ export default function Header(): ReturnType<React.FunctionComponent> {
                     isOpen
                       ? BUTTON_COLORS.RED
                       : theme === 'light'
-                      ? BUTTON_COLORS.BLACK
-                      : BUTTON_COLORS.WHITE
+                        ? BUTTON_COLORS.BLACK
+                        : BUTTON_COLORS.WHITE
                   }
                   width='5.2rem'
                   height='5.2rem'>
@@ -157,8 +166,8 @@ export default function Header(): ReturnType<React.FunctionComponent> {
                       isOpen
                         ? BUTTON_COLORS.RED
                         : theme === 'light'
-                        ? BUTTON_COLORS.BLACK
-                        : BUTTON_COLORS.WHITE
+                          ? BUTTON_COLORS.BLACK
+                          : BUTTON_COLORS.WHITE
                     }
                   />
                 </Button>
@@ -213,8 +222,8 @@ export default function Header(): ReturnType<React.FunctionComponent> {
                     isOpen
                       ? BUTTON_COLORS.TRANSPARENT_BLACK
                       : theme === 'light'
-                      ? BUTTON_COLORS.TRANSPARENT_BLACK
-                      : BUTTON_COLORS.TRANSPARENT_WHITE
+                        ? BUTTON_COLORS.TRANSPARENT_BLACK
+                        : BUTTON_COLORS.TRANSPARENT_WHITE
                   }
                   width={isTablet ? '8.5rem' : '12.4rem'}
                   height={isTablet ? '4.6rem' : '7.1rem'}

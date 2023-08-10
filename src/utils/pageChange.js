@@ -28,7 +28,7 @@ export function pageChange(langParam = "", pathParam = "") {
     }
 
     function setCookie(cName, cValue, cDay) {
-        console.log(cValue);
+        // console.log(cValue);
 
         var expire = new Date();
         expire.setDate(expire.getDate() + cDay);
