@@ -12,6 +12,7 @@ import { LINKS } from 'components/base/Link/constants';
 import { useTranslation } from "react-i18next";
 import mainPageVideo from 'assets/images/mainPageVideo.mov';
 import i18n from "languages/i18n";
+import React, { useEffect, useRef } from 'react';
 
 export default function MainTitle(): ReturnType<React.FunctionComponent> {
   const { t } = useTranslation()
@@ -111,7 +112,7 @@ export default function MainTitle(): ReturnType<React.FunctionComponent> {
         </Inner>
       </Container>
       <S.ImageBox>
-        <S.TitleVideo src={mainPageVideo} autoPlay={true} loop muted />
+        <S.TitleVideo src={mainPageVideo} playsInline autoPlay={true} loop muted/>
       </S.ImageBox>
       <S.Description>
         <Container>

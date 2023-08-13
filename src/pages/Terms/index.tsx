@@ -1,9 +1,20 @@
 import S from 'pages/Terms/style';
 import { Container, Inner } from 'components/shared';
 import i18n from "languages/i18n";
+import React, { useEffect, useState } from 'react';
 
 export default function Terms(): ReturnType<React.FunctionComponent> {
-  const isKoKR = i18n.language === "ko";
+  const [language, setLanguage] = useState<string>(i18n.language);
+  const isKoKR = language === "ko";
+
+  useEffect(() => {
+    setInterval(() => {
+      if (i18n.language != language) {
+        setLanguage(i18n.language);
+      }
+    }, 1000);
+  }, [i18n.language]);
+
   const koreanTerms = <S.DescriptionWrapper>
     <S.Description>
       귀하와 주식회사 이안손앤컴퍼니 (이하 “이안손”) 사이에 법적 구속력이 있는 본 이용약관을 주의 깊게 검토하여 주시기 바랍니다. 본 이용 약관은 이안손 및 고객 (아래 정의 됨)과의 관계를 규정합니다.

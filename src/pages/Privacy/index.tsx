@@ -1,9 +1,19 @@
 import S from 'pages/Compliance/style';
 import { Container, Inner } from 'components/shared';
 import i18n from "languages/i18n";
+import React, { useEffect, useState } from 'react';
 
 export default function Privacy(): ReturnType<React.FunctionComponent> {
-  const isKoKR = i18n.language === "ko";
+  const [language, setLanguage] = useState<string>(i18n.language);
+  const isKoKR = language === "ko";
+
+  useEffect(() => {
+    setInterval(() => {
+      if (i18n.language != language) {
+        setLanguage(i18n.language);
+      }
+    }, 1000);
+  }, [i18n.language]);
 
   const onClick = (e: React.MouseEvent) => {
     if ((e.ctrlKey || e.metaKey)) {

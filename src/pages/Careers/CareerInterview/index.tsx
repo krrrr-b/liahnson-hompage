@@ -1,29 +1,30 @@
 import { Container, Inner } from 'components/shared';
 import { useState } from 'react';
 import S from 'pages/Careers/CareerInterview/styled';
-import Button from 'components/base/Button';
 import { BUTTON_COLORS } from 'components/base/Button/constants';
-import Icon from 'components/base/Icon';
-import { IconName } from 'assets/icons';
 import careerVideo from 'assets/images/career.mov';
 import i18n from "languages/i18n";
 
 // MouseEvent element 배경이미지 수정이 LIGHT_GREY 으로 되지 않아 임시 지정
 const rgba_of_light_grey = 'rgba(182,182,182,0.3)';
-const isKorean = i18n.language === "ko";
-const data = [
-  {
-    image:
-      'https://images.unsplash.com/photo-1603796846097-bee99e4a601f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
-    text: isKorean ? '수평적인 조직문화, 개인 역량에 따른 확실한 성과급 제도는 이안손앤컴퍼니가 제공하는 가장 기본적인 근로자 권리입니다. 고객사와 전문가 사이에서 다양한 산업의 정보를 관장함으로써 4차 산업혁명 시대가 원하는 제너럴리스트가 될 수 있는 기회, 이안손앤컴퍼니가 제공합니다' : '“A horizontal organizational culture and a clear incentive system based on individual capabilities are the most basic worker rights provided by Liahnson & Company. Liahnson & Company provides an opportunity to become a generalist desired in the era of the 4th Industrial Revolution by managing information in various industries between clients and experts.”',
-    reviewer: isKorean ?'김성훈 프로젝트 매니저' : 'Peter Kim | Project Manager',
-  },
-];
 
 export default function CareerInterview(): ReturnType<React.FunctionComponent> {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [offset, setOffset] = useState(0);
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
+
+  const isKorean = i18n.language === "ko";
+
+  console.log(i18n.language);
+
+  const data = [
+    {
+      image:
+        'https://images.unsplash.com/photo-1603796846097-bee99e4a601f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
+      text: isKorean ? '수평적인 조직문화, 개인 역량에 따른 확실한 성과급 제도는 이안손앤컴퍼니가 제공하는 가장 기본적인 근로자 권리입니다. 고객사와 전문가 사이에서 다양한 산업의 정보를 관장함으로써 4차 산업혁명 시대가 원하는 제너럴리스트가 될 수 있는 기회, 이안손앤컴퍼니가 제공합니다' : '“A horizontal organizational culture and a clear incentive system based on individual capabilities are the most basic worker rights provided by Liahnson & Company. Liahnson & Company provides an opportunity to become a generalist desired in the era of the 4th Industrial Revolution by managing information in various industries between clients and experts.”',
+      reviewer: isKorean ? '김성훈 프로젝트 매니저' : 'Peter Kim | Project Manager',
+    },
+  ];
 
   const handlePrev = () => {
     setCurrentIndex(prevIndex =>
@@ -81,13 +82,13 @@ export default function CareerInterview(): ReturnType<React.FunctionComponent> {
               onTouchStart={handleTouchStart}
               onTouchMove={handleTouchMove}
               onTouchEnd={handleTouchEnd}>
-              <S.ImageContainer style={{wordBreak: 'keep-all'}}>
+              <S.ImageContainer style={{ wordBreak: 'keep-all' }}>
                 <img src={data[currentIndex].image} alt='Display' />
               </S.ImageContainer>
               <S.TextContainer>
                 <S.ReviewWrapper>
-                  <S.Review style={{wordBreak: 'keep-all'}}>{data[currentIndex].text}</S.Review>
-                  <S.Reference style={{wordBreak: 'keep-all'}}>{data[currentIndex].reviewer}</S.Reference>
+                  <S.Review style={{ wordBreak: 'keep-all' }}>{data[currentIndex].text}</S.Review>
+                  <S.Reference style={{ wordBreak: 'keep-all' }}>{data[currentIndex].reviewer}</S.Reference>
                   {/* <S.ButtonWrapper>
                     <Button
                       width='6.6rem'
@@ -135,7 +136,7 @@ export default function CareerInterview(): ReturnType<React.FunctionComponent> {
         </Container>
       </S.Wrapper>
       <S.imageWrapper>
-        <S.Video src={careerVideo} autoPlay={true} loop muted />
+        <S.Video src={careerVideo} playsInline autoPlay={true} loop muted />
       </S.imageWrapper>
     </>
   );

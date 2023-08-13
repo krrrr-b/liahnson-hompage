@@ -115,7 +115,7 @@ export default function Footer(): ReturnType<React.FunctionComponent> {
       </Container>
 
       <S.ImageBox>
-        <S.FooterVideo src={isMainPage ? footerPageVideo1 : footerPageVideo2} autoPlay={true} loop muted/>
+        <S.FooterVideo src={isMainPage ? footerPageVideo1 : footerPageVideo2} playsInline autoPlay={true} loop muted/>
       </S.ImageBox>
 
       <S.FooterBottomSection>
