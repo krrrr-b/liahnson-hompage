@@ -5,6 +5,7 @@ const Container = styled.div`
   max-width: 173.3rem;
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
   margin: auto;
 
   ${({ theme }) => css`

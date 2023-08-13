@@ -91,7 +91,7 @@ const Right = styled.ul<{ isOpen: boolean }>`
 `;
 
 const NavListItem = styled.li`
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 590;
   overflow-wrap: anywhere;
   word-break: break-word;
