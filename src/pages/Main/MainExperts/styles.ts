@@ -3,7 +3,8 @@ import styled, { css } from 'styled-components';
 const Wrapper = styled.section`
   padding: 13rem 0;
   margin-bottom: -30rem;
-
+  overflow-x: hidden;
+  
   ${({ theme }) => css`
     @media (max-width: ${theme.breakpoints.medium}) {
       padding: 8.5rem 0 11.2rem;
