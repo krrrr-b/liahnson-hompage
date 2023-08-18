@@ -66,6 +66,8 @@ const Right = styled.ul<{ isOpen: boolean }>`
   flex: 1;
   justify-content: flex-end;
   align-items: center;
+  word-wrap: break-word;
+  word-break: break-all;
 
   & > *:not(:last-child) {
     margin-right: 3.5rem;
@@ -94,7 +96,8 @@ const NavListItem = styled.li`
   font-size: 1.8rem;
   font-weight: 590;
   overflow-wrap: anywhere;
-  word-break: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
 
   ${({ theme }) => css`
     @media (max-width: ${theme.breakpoints.large}) {
@@ -105,10 +108,11 @@ const NavListItem = styled.li`
   `}
 `;
 
-const LinkItem = styled(NavLink)<{ theme?: string }>`
+const LinkItem = styled(NavLink) <{ theme?: string }>`
   position: relative;
   display: inline-block;
-  word-break: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
   color: ${({ theme }) =>
     theme === 'dark' ? 'var(--color-grey-000)' : 'var(--color-grey-800)'};
 
@@ -119,7 +123,7 @@ const LinkItem = styled(NavLink)<{ theme?: string }>`
   &::before {
     position: absolute;
     content: attr(aria-label);
-    font-size: 2rem;
+    font-size: 1.9rem;
     font-weight: 860;
     visibility: hidden;
     white-space: nowrap;
@@ -131,13 +135,13 @@ const LinkItem = styled(NavLink)<{ theme?: string }>`
     &.active {
       color: var(--color-red-500);
       font-weight: 700;
-      font-size: 3.5rem;
+      font-size: 3.4rem;
     }
 
     &::before {
       position: absolute;
       content: attr(aria-label);
-      font-size: 3.5rem;
+      font-size: 3.4rem;
       font-weight: 700;
       visibility: hidden;
       white-space: nowrap;

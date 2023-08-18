@@ -126,8 +126,7 @@ export default function Terms(): ReturnType<React.FunctionComponent> {
       Consulting Services.
       You also agree to the following:
       You will not participate in any Advisory Services that contain confidential information about your
-      current employer or former employer.
-      If you are employed by a government, you agree not to participate in any Advisory Services about any
+      current employer or former employer. You will only participate in any Advisory Services if you have no limiting clauses with your current employer. You are responsible for ensuring that you are not forbidden from participating in any Advisory Services by your current employer. If your current employer has any restrictions regarding any activities related to Advisory Services, you are required to submit evidence of permission from your current employer before engaging in any Advisory Services. If you are employed by a government, you agree not to participate in any Advisory Services about any
       industries or entities that contain confidential non-public policies.
       As a Liahnson Advisor Member you are prohibited from providing and/or receiving anything of value to
       or from any government official (including any employee or representative of a government-owned
@@ -234,6 +233,7 @@ export default function Terms(): ReturnType<React.FunctionComponent> {
       <h3>ENTIRE AGREEMENT</h3>
       <br />
       It is agreed that there is no representation, warranty, collateral agreement or condition affecting this Agreement except as expressively provided in this Agreement.
+      <br/><br/>
       End of Terms & Conditions © 2023 Liahnson & Company, Inc. All rights reserved.
     </S.Description>
   </S.DescriptionWrapper>

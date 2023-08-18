@@ -32,7 +32,7 @@ export default function Privacy(): ReturnType<React.FunctionComponent> {
       <br />
       ※ 회사는 만 14 세 미만 아동의 개인정보는 수집하지 않습니다.
       <br /><br />
-      <h4>제 1 조(개인정보의 처리 목적)</h4>
+      <h3>제 1 조(개인정보의 처리 목적)</h3>
       <br />
       회사는 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는 개인정보는 다음의
       목적 이외의 용도로는 이용되지 않으며 이용 목적이 변경되는 경우에는 개인정보 보호법
@@ -49,7 +49,7 @@ export default function Privacy(): ReturnType<React.FunctionComponent> {
       고객 문의 처리 등 회원 보호 및 서비스 운영 목적으로 개인정보를
       처리합니다.<br /><br />
 
-      <h4>제 2 조(개인정보의 처리 및 보유 기간)</h4>
+      <h3>제 2 조(개인정보의 처리 및 보유 기간)</h3>
       <br />
       회사는 원칙적으로 회원탈퇴 시 정보주체의 개인정보를 지체없이 파기하고 있으며,
       법령에 따른 개인정보의 보유 및 이용 기간 또는 정보주체로부터 개인정보를 수집 시에
@@ -67,7 +67,7 @@ export default function Privacy(): ReturnType<React.FunctionComponent> {
       &nbsp;&nbsp;&nbsp;&nbsp;3) 소비자의 불만 또는 분쟁처리에 관한 기록 : 3 년<br />
       &nbsp;&nbsp;&nbsp;&nbsp;4) 소득세법에 따른 과세에 관한 기록 : 5 년<br />
       <br />
-      <h4>제 3 조(처리하는 개인정보의 항목)</h4><br />
+      <h3>제 3 조(처리하는 개인정보의 항목)</h3><br />
       회사는 다음의 개인정보 항목을 처리하고 있습니다.<br /><br />
       ● 필수항목<br /><br />
       1. 전문가 pool 등록 시에는 이름, 이메일, 전화번호, 회사, 직책.<br />
@@ -79,11 +79,11 @@ export default function Privacy(): ReturnType<React.FunctionComponent> {
       <button onClick={e => { onClick(e); }}>별도 동의 후, 개인정보를 추가 수집하는 경우</button>
       <br />
       <br />
-      <h4>제 4 조(개인정보의 제 3 자 제공에 관한 사항)</h4><br />
+      <h3>제 4 조(개인정보의 제 3 자 제공에 관한 사항)</h3><br />
       회사는 개인정보를 제 1 조(개인정보의 처리 목적)에서 명시한 범위 내에서만 처리하며,
       정보주체의 동의, 법률의 특별한 규정 등 개인정보보호법 제 17 조 및 제 18 조에
       해당하는 경우에만 개인정보를 제 3 자에게 제공합니다.<br /><br />
-      <h4>제 5 조(개인정보처리의 위탁에 관한 사항)</h4><br />
+      <h3>제 5 조(개인정보처리의 위탁에 관한 사항)</h3><br />
       1. 회사는 원활한 개인정보 업무처리를 위하여 다음과 같이 개인정보 처리업무를
       위탁하고 있습니다.<br /><br />
       <table>
@@ -143,7 +143,7 @@ export default function Privacy(): ReturnType<React.FunctionComponent> {
       수탁자가 개인정보를 안전하게 처리하는지 감독하고 있습니다.<br /><br />
       4. 위탁업무의 내용이나 수탁자가 변경될 경우에는 지체없이 본 개인정보
       처리방침을 통하여 공개하도록 하겠습니다.<br /><br />
-      <h4>제 6 조(개인정보의 파기절차 및 파기방법)</h4><br />
+      <h3>제 6 조(개인정보의 파기절차 및 파기방법)</h3><br />
       1. 회사는 개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게
       되었을 때에는 지체없이 해당 개인정보를 파기합니다.<br />
       2. 정보주체로부터 동의 받은 개인정보 보유기간이 경과하거나 처리목적이
@@ -158,7 +158,7 @@ export default function Privacy(): ReturnType<React.FunctionComponent> {
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기하며,
       전자적 파일 형태의 정보는 기록을 재생할 수 없는 기술적 방법을
       사용합니다.<br /><br />
-      <h4>제 7 조(정보주체와 법정대리인의 권리·의무 및 그 행사방법에 관한 사항)</h4><br />
+      <h3>제 7 조(정보주체와 법정대리인의 권리·의무 및 그 행사방법에 관한 사항)</h3><br />
       1. 정보주체는 회사에 언제든지 개인정보 열람, 정정, 삭제, 처리정지 요구 등의
       권리를 행사할 수 있습니다.<br />
       2. 정보주체의 권리 행사는 회사에 대해 개인정보 보호법 시행령 제 41 조제 1 항에
@@ -173,8 +173,8 @@ export default function Privacy(): ReturnType<React.FunctionComponent> {
       명시되어 있는 경우에는 그 삭제를 요구할 수 없습니다.<br />
       6. 회사는 정보주체 권리에 따른 열람의 요구, 정정, 삭제의 요구, 처리정지의 요구
       시 열람 등 요구를 한 자가 본인이거나 정당한 대리인인지 확인합니다.<br /><br />
-      <h4>제 8 조(개인정보의 안전성 확보조치에 관한 사항)</h4><br />
-      <h4>회사는 개인정보의 안전성 확보를 위해 다음과 같은 조치를 취하고 있습니다.</h4><br />
+      <h3>제 8 조(개인정보의 안전성 확보조치에 관한 사항)</h3><br />
+      <h3>회사는 개인정보의 안전성 확보를 위해 다음과 같은 조치를 취하고 있습니다.</h3><br />
       1. 내부관리계획의 수립 및 시행<br />
       개인정보의 안전한 처리를 위하여 내부관리계획을 수립하고 시행하고 있습니다.<br />
       2. 개인정보 취급 직원의 최소화 및 교육<br />
@@ -206,7 +206,7 @@ export default function Privacy(): ReturnType<React.FunctionComponent> {
       9. 문서보안을 위한 잠금장치 사용<br />
       개인정보가 포함된 서류, 보조저장매체 등을 잠금장치가 있는 안전한 장소에
       보관하고 있습니다.<br /><br />
-      <h4>제 9 조(개인정보를 자동으로 수집하는 장치의 설치·운영 및 그 거부에 관한 사항)</h4><br />
+      <h3>제 9 조(개인정보를 자동으로 수집하는 장치의 설치·운영 및 그 거부에 관한 사항)</h3><br />
       1. 회사는 이용자에게 개별적인 서비스를 제공하기 위해 이용정보를 저장하고
       수시로 불러오는 `쿠키(cookie)`를 사용합니다.<br />
       2. 쿠키는 웹사이트를 운영하는데 이용되는 서버(http)가 이용자의 컴퓨터
@@ -219,15 +219,15 @@ export default function Privacy(): ReturnType<React.FunctionComponent> {
       메뉴의 옵션 설정을 통해 쿠키 저장을 거부할 수 있습니다.<br />
       &nbsp;&nbsp;&nbsp;&nbsp;3) 쿠키 저장을 거부할 경우 개별적인 서비스 이용에 어려움이 발생할 수
       있습니다.<br /><br />
-      <h4>제 10 조(행태정보의 수집·이용·제공 및 거부 등에 관한 사항)</h4><br />
+      <h3>제 10 조(행태정보의 수집·이용·제공 및 거부 등에 관한 사항)</h3><br />
       1. 회사는 온라인 맞춤형 광고 등을 위한 행태정보를 수집·이용·제공하지 않습니다.<br /><br />
-      <h4>제 11 조(추가적인 이용·제공 판단기준)</h4><br />
+      <h3>제 11 조(추가적인 이용·제공 판단기준)</h3><br />
       회사는 개인정보 보호법 제 15 조 제 3 항 및 제 17 조 제 4 항에 따라 개인정보 보호법
       시행령 제 14 조의 2 에 따른 사항을 고려하여 정보주체의 동의 없이 개인정보를
       추가적으로 이용 및 제공할 수 있습니다.<br /><br />
       단, 회사는 위 내용에도 불구하고 제 1 조(개인정보의 처리 목적)에서 명시한 범위
       내에서만 처리하며, 개인정보를 추가적으로 이용 및 제공하지 않습니다.<br /><br />
-      <h4>제 12 조 (개인정보 보호책임자에 관한 사항)</h4><br />
+      <h3>제 12 조 (개인정보 보호책임자에 관한 사항)</h3><br />
       1. 회사는 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와
       관련한 정보주체의 불만처리 및 피해구제 등을 위하여 아래와 같이 개인정보
       보호책임자를 지정하고 있습니다.<br /><br />
@@ -244,7 +244,7 @@ export default function Privacy(): ReturnType<React.FunctionComponent> {
       보호 관련 문의, 불만처리, 피해구제 등에 관한 사항을 개인정보 보호책임자 및
       담당부서로 문의하실 수 있습니다. 회사는 정보주체의 문의에 대해 지체 없이
       답변 및 처리해드릴 것입니다.<br /><br />
-      <h4>제 13 조(개인정보의 열람청구를 접수·처리하는 부서)</h4><br />
+      <h3>제 13 조(개인정보의 열람청구를 접수·처리하는 부서)</h3><br />
       정보주체는 ｢개인정보 보호법｣ 제 35 조에 따른 개인정보의 열람 청구를 아래의 부서에
       할 수 있습니다.<br />
       회사는 정보주체의 개인정보 열람청구가 신속하게 처리되도록 노력하겠습니다.<br /><br />
@@ -252,7 +252,7 @@ export default function Privacy(): ReturnType<React.FunctionComponent> {
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◼ 부서명 : 개인정보 보호 담당<br />
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◼ 담당자 : 윤희석<br />
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◼ 연락처 : 02-6731-0701, <a href="mailto:contact@liahnson.com">contact@liahnson.com</a><br /><br />
-      <h4>제 16 조(정보주체의 권익침해에 대한 구제방법)</h4><br />
+      <h3>제 16 조(정보주체의 권익침해에 대한 구제방법)</h3><br />
       정보주체는 개인정보침해로 인한 구제를 받기 위하여 개인정보분쟁조정위원회,
       한국인터넷진흥원 개인정보침해신고센터 등에 분쟁해결이나 상담 등을 신청할 수
       있습니다. 이 밖에 기타 개인정보침해의 신고, 상담에 대하여는 아래의 기관에
@@ -267,7 +267,7 @@ export default function Privacy(): ReturnType<React.FunctionComponent> {
       바에 따라 행정심판을 청구할 수 있습니다.<br /><br />
       &nbsp;&nbsp;&nbsp;&nbsp;● 행정심판에 대해 자세한 사항은 중앙행정심판위원회(<a href="www.simpan.go.kr">www.simpan.go.kr</a>)
       홈페이지를 참고하시기 바랍니다.<br /><br />
-      <h4>제 18 조(개인정보 처리방침 변경)</h4><br />
+      <h3>제 18 조(개인정보 처리방침 변경)</h3><br />
       1. 이 개인정보 처리방침은 2023 년 9 월 14 부터 적용됩니다.<br />
       2. 이전의 개인정보 처리방침은 아래에서 확인하실 수 있습니다.<br />
       <a href="">변경 전, 개인정보 처리방침 보기</a>
@@ -276,7 +276,7 @@ export default function Privacy(): ReturnType<React.FunctionComponent> {
 
   const englishPrivacy = <><S.TitleWrapper><S.Title>Privacy Policy</S.Title></S.TitleWrapper><S.DescriptionWrapper>
     <S.Description>
-      <h4>TERMS OF PRIVACY</h4>
+      <h3>TERMS OF PRIVACY</h3>
       <br />
       Liahnson (the “Company”) is committed to maintaining robust privacy protections for our users.
       Our Privacy Policy (“Privacy Policy”) is designed to help you understand how we collect, use and
@@ -292,7 +292,7 @@ export default function Privacy(): ReturnType<React.FunctionComponent> {
       Personal Information as described in this Privacy Policy.
     </S.Description>
     <S.Description>
-      <h4>INFORMATION WE COLLECT</h4>
+      <h3>INFORMATION WE COLLECT</h3>
       <br />
       We collect “Non-Personal Information” and “Personal Information.”
       Non-Personal Information includes information that cannot be used to personally identify you, such as
@@ -303,7 +303,7 @@ export default function Privacy(): ReturnType<React.FunctionComponent> {
       to us through the registration process at the Site or via email.
     </S.Description>
     <S.Description>
-      <h4>INFORMATION COLLECTED VIA TECHNOLOGY</h4>
+      <h3>INFORMATION COLLECTED VIA TECHNOLOGY</h3>
       <br />
       To activate the Service you do not need to submit any Personal Information other than your email
       address.
@@ -320,7 +320,7 @@ export default function Privacy(): ReturnType<React.FunctionComponent> {
       and aggregate basis.
     </S.Description>
     <S.Description>
-      <h4>INFORMATION YOU PROVIDE US BY REGISTERING FOR AN ACCOUNT</h4>
+      <h3>INFORMATION YOU PROVIDE US BY REGISTERING FOR AN ACCOUNT</h3>
       <br />
       In addition to the information provided automatically by your browser when you visit the Site, to
       become a subscriber to the Service you will need to create a personal profile.
@@ -329,7 +329,7 @@ export default function Privacy(): ReturnType<React.FunctionComponent> {
       accordance with this Privacy Policy.
     </S.Description>
     <S.Description>
-      <h4>HOW WE USE INFORMATION</h4>
+      <h3>HOW WE USE INFORMATION</h3>
       <br />
       Personal Information
       We use your information to facilitate and process your participation in Projects and to contact you
@@ -359,7 +359,7 @@ export default function Privacy(): ReturnType<React.FunctionComponent> {
       used.
     </S.Description>
     <S.Description>
-      <h4>HOW WE PROTECT INFORMATION</h4>
+      <h3>HOW WE PROTECT INFORMATION</h3>
       <br />
       We implement security measures designed to protect your information from unauthorized access.
       Your account is protected by your account password and we urge you to take steps to keep your
@@ -372,7 +372,7 @@ export default function Privacy(): ReturnType<React.FunctionComponent> {
       By using our Service, you acknowledge that you understand and agree to assume these risks.
     </S.Description>
     <S.Description>
-      <h4>YOUR RIGHTS REGARDING THE USE OF YOUR PERSONAL INFORMATION</h4>
+      <h3>YOUR RIGHTS REGARDING THE USE OF YOUR PERSONAL INFORMATION</h3>
       <br />
       As a subscriber, you are required to update your professional profile and employment information,
       which you agree to be true and up to date.
@@ -388,7 +388,7 @@ export default function Privacy(): ReturnType<React.FunctionComponent> {
       Privacy Policy you have previously agreed to.
     </S.Description>
     <S.Description>
-      <h4>LINKS TO OTHER WEBSITES</h4>
+      <h3>LINKS TO OTHER WEBSITES</h3>
       <br />
       As part of the Service, we may provide links to or compatibility with other websites or applications.
       However, we are not responsible for the privacy practices employed by those websites or the
@@ -403,7 +403,7 @@ export default function Privacy(): ReturnType<React.FunctionComponent> {
       them.
     </S.Description>
     <S.Description>
-      <h4>CHANGES TO OUR PRIVACY POLICY</h4>
+      <h3>CHANGES TO OUR PRIVACY POLICY</h3>
       <br />
       The Company reserves the right to change this policy and our Terms of Service at any time.
       We will notify you of significant changes to our Privacy Policy by sending a notice to the primary email
@@ -413,7 +413,7 @@ export default function Privacy(): ReturnType<React.FunctionComponent> {
       You should periodically check the Site and this privacy page for updates.
     </S.Description>
     <S.Description>
-      <h4>CONTACT US</h4>
+      <h3>CONTACT US</h3>
       <br />
       If you have any questions regarding this Privacy Policy or the practices of this Site, please contact us
       by sending an email to privacy@liahnson.com

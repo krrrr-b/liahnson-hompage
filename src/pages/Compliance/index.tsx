@@ -30,7 +30,7 @@ export default function Compliance(): ReturnType<React.FunctionComponent> {
       <h3>전문가</h3>
       <br />
 
-      <h4>1. 계약</h4>
+      <h3>1. 계약</h3>
       <p>
         이안손을 통해 자문을 진행하기 위해서는 전문가는 이안손 Terms & Conditions를 서명하고 하기사항에 동의해야 합니다.
         <br />
@@ -41,7 +41,7 @@ export default function Compliance(): ReturnType<React.FunctionComponent> {
         c) 자문 간 인지한 고객사의 모든 정보는 기밀사항으로 인지하고 외부로 공개하지 않습니다.
       </p>
       <br />
-      <h4>2. 이해충돌 관리</h4>
+      <h3>2. 이해충돌 관리</h3>
       <p>
         전문가 입장에서 이해가 충돌되는 상황이 발생할 가능성이 있습니다.
         이안손은 적극적으로 전문가 입장에서 문제가 없는지 파악하기 위해 노력하고 있으며, 부적합하다고 판단되는 프로젝트에는 전문가가 참여하지 않도록 중재하고 있습니다.

@@ -68,14 +68,14 @@ const Title = styled.p<{ isVertical: boolean }>`
       ? `padding: 8.3rem 0 4.1rem 8.4rem;`
       : `padding: 11.5rem 0 4.1rem 8.4rem;`}
   color: var(--color-grey-000);
-  font-size: 60px;
+  font-size: 55px;
   line-height: 72px;
 
   ${({ theme }) => css`
     @media (max-width: ${theme.breakpoints.medium}) {
       padding: 5.4rem 3rem 2.6rem;
       font-weight: 400;
-      font-size: 40px;
+      font-size: 35px;
       line-height: 50px;
     }
   `}
