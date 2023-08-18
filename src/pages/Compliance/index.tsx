@@ -17,7 +17,7 @@ export default function Compliance(): ReturnType<React.FunctionComponent> {
 
   const koreanCompliance = <S.DescriptionWrapper>
     <S.Description>
-      <h3>소개</h3>
+      <h4>소개</h4>
       <br />
       이안손은 전문가 네트워크 관련 컴플라이언스 기준의 수립 및 개발을 최우선으로 생각하고 있습니다.
       안정적이고 고도화된 컴플라이언스 체계를 통해 고객사는 안심하고 전문가로부터 인사이트를 확보할 수 있습니다.
@@ -27,10 +27,10 @@ export default function Compliance(): ReturnType<React.FunctionComponent> {
     </S.Description>
 
     <S.Description>
-      <h3>전문가</h3>
+      <h4>전문가</h4>
       <br />
 
-      <h3>1. 계약</h3>
+      <h4>1. 계약</h4>
       <p>
         이안손을 통해 자문을 진행하기 위해서는 전문가는 이안손 Terms & Conditions를 서명하고 하기사항에 동의해야 합니다.
         <br />
@@ -41,7 +41,7 @@ export default function Compliance(): ReturnType<React.FunctionComponent> {
         c) 자문 간 인지한 고객사의 모든 정보는 기밀사항으로 인지하고 외부로 공개하지 않습니다.
       </p>
       <br />
-      <h3>2. 이해충돌 관리</h3>
+      <h4>2. 이해충돌 관리</h4>
       <p>
         전문가 입장에서 이해가 충돌되는 상황이 발생할 가능성이 있습니다.
         이안손은 적극적으로 전문가 입장에서 문제가 없는지 파악하기 위해 노력하고 있으며, 부적합하다고 판단되는 프로젝트에는 전문가가 참여하지 않도록 중재하고 있습니다.
@@ -50,7 +50,7 @@ export default function Compliance(): ReturnType<React.FunctionComponent> {
       </p>
       <br />
 
-      <h3>고객</h3>
+      <h4>고객</h4>
       <br />
       이안손은 컴플라이언스를 통해 기밀 정보가 유출되는 위험을 줄이고 고객사를 보호하고 있습니다. 사전에 전문가를 검증하고 관리하여 이해충돌 문제가 발생할 수 있거나 고용주로부터 자문이 제한된 전문가는 고객사를 연결하지 않도록 합니다.
       <br /><br />

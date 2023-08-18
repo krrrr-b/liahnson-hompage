@@ -30,14 +30,14 @@ const TitleWrapper = styled.div`
 
 const Title = styled.div`
   font-weight: 590;
-  font-size: 25px;
+  font-size: 30px;
   line-height: 30px;
 
   ${({ theme }) => css`
     @media (max-width: ${theme.breakpoints.medium}) {
       margin-top: 3rem;
       font-weight: 590;
-      font-size: 15px;
+      font-size: 30px;
       line-height: 18px;
     }
   `}

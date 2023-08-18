@@ -18,15 +18,15 @@ export default function Compliance(): ReturnType<React.FunctionComponent> {
   const koreanPrivacy = <S.DescriptionWrapper>
     <S.Description>
       <br />
-      <h1>쿠키 정책</h1>
+      <h2>쿠키 정책</h2>
       <br />
-      <h3>소개</h3>
+      <h4>소개</h4>
       이 문서는 쿠키를 어떻게 사용하고 왜 사용하는지에 대해 알려줍니다. 또한 사용하는 쿠키와 웹 사이트에 쿠키를 배치하는 타사에 대한 일부 정보도 제공합니다.
       <br /><br />
-      <h3>쿠키란 무엇인가요?</h3>
+      <h4>쿠키란 무엇인가요?</h4>
       쿠키는 장치에 저장되는 작은 텍스트 파일로, 우리가 제공하는 서비스를 개선하고 더 효율적으로 사용할 수 있게 합니다. 장치와 브라우저를 인식하고, 서비스 개선에 중요한 정보를 저장할 수 있도록 합니다.
       <br /><br />
-      <h3>쿠키의 종류 </h3>
+      <h4>쿠키의 종류 </h4>
       세션 쿠키와 지속 쿠키<br />
       - 세션 쿠키는 웹사이트를 방문하는 동안 장치의 메모리에 일시적으로 저장되며, 브라우저를 닫으면 지워집니다.<br />
       - 지속 쿠키는 일정 기간 동안 저장되며, 기간은 쿠키마다 다릅니다. 세션 쿠키보다는 더 오래 지속되지만, 몇 개월 후에는 만료됩니다. 이를 통해 이전에 웹사이트나 비슷한 사이트를 방문한 적이 있는지 알 수 있습니다.<br />
@@ -35,14 +35,14 @@ export default function Compliance(): ReturnType<React.FunctionComponent> {
       - 1자 쿠키는 웹사이트나 웹사이트의 하위 도메인에서 직접 설정됩니다.<br />
       - 3자 쿠키는 저희가 관리하지 않는 웹사이트, 우리의 하청업체 또는 기술 파트너가 설정하는 쿠키입니다.<br />
       <br />
-      <h3>쿠키를 어떻게 사용하나요? </h3>
+      <h4>쿠키를 어떻게 사용하나요? </h4>
       웹사이트에서 로그인하는 옵션: 웹사이트에서 인증을 받아 로그인 세션을 유지하고 로그인 정보를 저장합니다. <br />
       탭 정보: 웹사이트의 탭 또는 특정 부분을 추적합니다. <br />
       지역별 콘텐츠: 지역에 맞는 콘텐츠를 제공하고 시간대 설정을 기록합니다. <br />
       언어 설정: 표시되는 콘텐츠의 언어를 선택하고 기억합니다. <br />
       기기 기능: 사용 중인 브라우저 기기에 따라 다양한 콘텐츠를 제공할 수 있는 기능입니다.<br />
       <br />
-      <h3>어떤 쿠키를 사용하나요? </h3>
+      <h4>어떤 쿠키를 사용하나요? </h4>
       <b>필수 쿠키</b><br />
       필수 쿠키 서비스 제공을 가능하게 하기 위해 필요한 경우 기기에 쿠키를 저장할 수 있습니다. 웹사이트와 웹 애플리케이션을 탐색하고 사용 가능한 모든 기능을 활용하는 데 필요합니다. 이러한 쿠키는 끌 수 없으며, 로그인, 양식 및 시간대 또는 언어와 같은 웹사이트의 기본 옵션에 대한 설정으로 설정됩니다.<br />
       <br />
@@ -74,12 +74,12 @@ export default function Compliance(): ReturnType<React.FunctionComponent> {
       <br />
       쿠키를 올바르게 브라우저에서 차단하면 웹사이트의 일부가 사용할 수 없거나 제대로 작동하지 않을 수 있습니다.<br />
       <br />
-      <h3>타사 쿠키 및 타겟팅 광고 거부하는 방법</h3>
+      <h4>타사 쿠키 및 타겟팅 광고 거부하는 방법</h4>
       타사 쿠키 및 타겟팅 광고 거부하는 방법 Google이 배치한 추적 분석을 거부하려면 이 양식을 사용하여 거부할수 있습니다. 이는 Google의 서비스를 사용하여 분석 데이터를 추적하는 모든 웹사이트에서 작동합니다.
       <br /><br />
       관심 기반 광고를 가능하게 하는 쿠키를 이해하고 책임 있게 관리하려면 Digital Advertising Alliance (DAA) 또는 Network Advertising Initiative (NAI) 웹사이트를 방문하는 것을 권장합니다. 자세한 내용은 <a href="https://youradchoices.com/">https://youradchoices.com/</a> 를 참조하세요. 귀사의 서비스에서 귀하에게 관심 기반 광고를 제공하는 많은 타사 서비스 제공업체가 Network Advertising Initiative (NAI)의 회원이거나 DAA의 온라인 행동 광고에 대한 자기 규제 프로그램 참여 업체입니다.<br />
       <br />
-      <h3>이 정책의 변경사항</h3>
+      <h4>이 정책의 변경사항</h4>
       이 정책의 변경사항 이 쿠키 정책은 변경될 수 있습니다. 변경사항이 있으면 웹사이트에 게시하고 최신 버전의 쿠키 정책을 확인할 수 있도록 합니다.
       <br /><br />
       <b>
@@ -94,19 +94,19 @@ export default function Compliance(): ReturnType<React.FunctionComponent> {
   const englishPrivacy = <S.DescriptionWrapper>
     <S.Description>
       <br />
-      <h1>Cookie Policy</h1>
+      <h2>Cookie Policy</h2>
       <br />
-      <h3>Introduction</h3>
+      <h4>Introduction</h4>
       This document will inform you about how and why we use cookies. We will also tell you
       which cookies we use and some information about third parties which also place cookies on
       our website.
       <br /><br />
-      <h3>What is a cookie?</h3>
+      <h4>What is a cookie?</h4>
       Cookies are small text files that are stored on your device and which let us make your
       experience better and more efficient. They allow us to recognize your device and browser,
       and store information which we deem of importance for the improvement of our services.
       <br /><br />
-      <h3>Types of cookies.</h3>
+      <h4>Types of cookies.</h4>
       <br />
       Session Cookies and Persistent Cookies<br />
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Session cookies are stored temporarily on the memory of your devices while
@@ -121,7 +121,7 @@ export default function Compliance(): ReturnType<React.FunctionComponent> {
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Third Party cookies are set by websites not managed by us, such as our
       subprocessores or other technology partners.<br /><br />
 
-      <h3>How do we use cookies?</h3>
+      <h4>How do we use cookies?</h4>
       options for logging in that will authenticate you on the website, keep your login
       session active, and remember how you prefer to store your login information;<br />
       tabbed information that keeps track of the tab or specific part of the website you are
@@ -133,7 +133,7 @@ export default function Compliance(): ReturnType<React.FunctionComponent> {
       the capability of the device to deliver various content depending on the browser
       device being used;<br /><br />
 
-      <h3>What cookies do we use?</h3><br />
+      <h4>What cookies do we use?</h4><br />
       Essential cookies<br />
       We may store cookies on your device if they are necessary to enable us to offer and provide
       our services. They are also required for you to navigate through the website and web
@@ -160,13 +160,13 @@ export default function Compliance(): ReturnType<React.FunctionComponent> {
       These cookies are used to serve you with advertisements that may be relevant or of interest
       to you when you are browsing on the internet. They are mostly placed by third parties
       whenever you interact with their content on our website.<br /><br />
-      <h3>Interest-based ads</h3>
+      <h4>Interest-based ads</h4>
       Interest-Based Advertising – Cookies are also used to collect information about your
       interests and preferences for the purposes of what is called “interest-based advertising”. It is
       for companies to send you offers about products and services tailored to your inferred taste
       and needs. You may turn off these cookies; however, you may still receive advertisements,
       with the difference of these not being specifically tailored to you.<br /><br />
-      <h3>How to block cookies.</h3>
+      <h4>How to block cookies.</h4>
       You may stop or restrict the placement of cookies and other tracking technologies, such as
       pixel tags. You do this by blocking them on your device or by removing them and adjusting
       preferences on your browser. This may vary from device to device and from browser to
@@ -182,7 +182,7 @@ export default function Compliance(): ReturnType<React.FunctionComponent> {
       <a href="https://allaboutcookies.org/how-to-clear-cookies-netscape">Netscape</a><br /><br />
       Once you correctly block cookies on your browser, parts of the website may become
       unavailable to you or may otherwise not function properly.<br /><br />
-      <h3>How to opt-out of third-party cookies and targeted ads.</h3>
+      <h4>How to opt-out of third-party cookies and targeted ads.</h4>
       To opt out of tracking analytics placed by Google, you can opt out by using <a href="https://tools.google.com/dlpage/gaoptout/">this form</a>. This
       works for all websites that use Google’s services to track and gather analytics data.<br /><br />
       To understand and responsibly manage cookies that enable interested-based ads we
@@ -197,12 +197,12 @@ export default function Compliance(): ReturnType<React.FunctionComponent> {
       (<a href="https://optout.aboutads.info/?c=2&lang=EN">http://www.aboutads.info/choices/</a>). However, please note that if you “opt-out” you will
       keep seeing links and online advertisements; however, they will not be specifically targeted
       to you or tailored to your interests.<br /><br />
-      <h3>Changes to this Policy.</h3>
+      <h4>Changes to this Policy.</h4>
       More detail on how we and/or other companies use cookies is available at&nbsp;
       <a href="https://www.cookiesandyou.com/">www.cookiesandyou.com</a> .<br /><br />
       If you have any queries regarding this Cookie Policy please contact us, we will be happy to
       answer any questions you may have about this Cookie Policy.<br /><br />
-      <h3>Contact Us</h3>
+      <h4>Contact Us</h4>
       Liahnson & Company, Inc.<br />
       Phone Number: +82-2-6731-0701<br />
       Email Address: <a href="mailto:contact@liahnson.com">contact@liahnson.com</a><br />

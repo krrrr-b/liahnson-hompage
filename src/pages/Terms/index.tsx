@@ -21,19 +21,19 @@ export default function Terms(): ReturnType<React.FunctionComponent> {
     </S.Description>
 
     <S.Description>
-      <h3>이안손 소개</h3>
+      <h4>이안손 소개</h4>
       <br />
       이안손은 다양한 업계의 전문가 (“고문“) 에게 이안손 전문가 구성원으로 등록하여 이안손 및 고객 (“통칭하여 “고객”) 에게 자문 서비스를 제공할 수 있는 기회를 제공합니다. 자문 서비스 항목에는 전화 자문, 대면 미팅, 컨퍼런스 콜, 리포트 작성, 서베이, 비즈니스 투어, 워크샵 및 기타 리서치 서비스 (“컨설팅 서비스”) 이 있습니다.
     </S.Description>
 
     <S.Description>
-      <h3>이안손 전문가의 권리</h3>
+      <h4>이안손 전문가의 권리</h4>
       <br />
       이안손 전문가 구성원으로서, 귀하는 자유롭게 자문 서비스 제안을 수락하거나 거절할 수 있습니다. 각각의 이안손 전문가는 시간당 자문료를 자유롭게 정할 수 있습니다. 자문료 지급을 받기 위해서는 이안손에 정확한 은행 계좌 정보와 고객과의 자문 소요 시간이 포함된 인보이스 양식을 제출하여야 합니다. 이안손으로부터 사전 서면 승인을 받은 경우가 아니라면 자문에 대한 어떠한 준비시간, 자문 후추가 자문 서비스 등에 대한 보상을 받지 않습니다. 고객에게는 그러한 추가 작업에 대한 승인을할 권리가 없습니다. 추가로 이안손은 이안손를 통해 연결 되었거나 이안손에 의해 서면 형식으로 사전 승인된 자문 서비스에 대해서만 보상 합니다. 컨설팅 비용 지급은 통상적으로 이안손에 인보이스 제출 후 15일 이내에 지불되나, 자문 과정 중에 이안손의 자문활동 준수 사항이나 규칙 절차 등을 위반이 있을 경우에는 비용지급은 되지 않습니다. 귀하는 해당법률에 의거하여 이안손로부터 지불 받은 비용에 대한 귀하의 관할 지역에서 적용 가능한 세금 납부 할 책임이 있으며, 이안손의 요청이 있을 경우 그러한 세금 납부의 증거를 제공하는 것에 동의 합니다.
     </S.Description>
 
     <S.Description>
-      <h3>전문가 회원 행동 수칙</h3>
+      <h4>전문가 회원 행동 수칙</h4>
       <br />
       이안손은 기본적으로 전문가가 이안손 및 클라이언트와의 컨설팅 활동에 최대한 전문성과 예의를가지고 행동 할 것으로 기대합니다. 따라서, 이안손 전문가는 비공개 및 독점 정보, 상업적 비밀 및 귀하가 당사자인 기밀유지 계약서에 적용되는 모든 정보와 같은 기밀 정보를 공개해서는 안됩니다 (예, 현재 또는 이전의 고용관계, 이사직, 컨설팅 계약, 비공개 계약 등) 기밀 정보 공개를 피하기 위하여 자문 서비스를 종료해야 할 필요가 있다고 판단되면, 이안손은 귀하가 자문에 참여한 시간에 대한 비용을 지불합니다.
       귀하는 또한 하기 사항에 동의 합니다.
@@ -41,31 +41,31 @@ export default function Terms(): ReturnType<React.FunctionComponent> {
     </S.Description>
 
     <S.Description>
-      <h3>이안손과 고객정보의 기밀유지</h3>
+      <h4>이안손과 고객정보의 기밀유지</h4>
       <br />
       귀하가 이안손 전문가로 활동하는 기간과 활동 종료 이후에도, 귀하는 이안손 자문 서비스 도중 귀하에게 공개된 고객 관련 정보와 공개가 제한된 정보 (아래 정의 된)를 외부에 공개하거나 사용하려고 시도하거나 개인적 이익을 위해 사용하지 않을 것에 동의합니다. 다음 내용은 엄격하게 기밀로 간주 됩니다: (1) 고객의 신원 (예 : 귀하의 이력서 또는 웹 사이트에 고객에 관한 내용을 기재하지 않음). (2) 자문 서비스에 대한 정보; (3) 실제 진행 중인 또는 잠재적 사업 내용에 대한 정보, 투자 또는 거래 결정사항, 또는 고객의 거래에 관한 정보; 또는 (4) 이안손 또는 고객의 비공개 또는 독점 정보 (총칭하여 `제한된 정보`). 기밀 유지 및 공유가 제한된 정보와 관련된 본 조항의 의무는 본 계약의 해지 또는 만료 후에도 효력을 유지합니다.
     </S.Description>
 
     <S.Description>
-      <h3>당사자간의 관계</h3>
+      <h4>당사자간의 관계</h4>
       <br />
       귀하는 이안손의 독립적인 계약자로서 자문 서비스에 참여할 것이며, 따라서 이안손이 귀하에게 지불한 모든 컨설팅 서비스 관련 원천 과세 및 보고에 관한 의무 준수를 할 것을 인정하고 동의 합니다. 서면을 통해 명시적으로 동의한 경우를 제외하고, 귀하는 이안손을 대리하여 어떠한 계약과 협상 또는 의무를 부담하거나, 이안손 혹은 고객을 대표하여 어떠한 형태의 보증이나 진술을 할 권리나 권한이 없습니다. 이안손 전문가 회원 자격은 귀하와 이안손 또는 고객간에 세금 목적 또는 기타 목적으로 고용, 대행사, 파트너십, 합작투자 또는 기타 형태의 협회를 창설하지 않습니다. 또한 귀하는 이안손의 이름을 무단으로 사용하지 않을 것 을 인정합니다. 귀하는 자문 서비스를 수행하는 고객이 본 이용 약관의 의도 된 제 3의 수혜자이며 본 계약에 따른 귀하의 진술, 보증 및 약정에 대한 귀하의위반과 관련하여 이안손과 동일한 권리와 기대를 가짐을 인정합니다. 또한 귀하가 이안손 전문가로 활동하는 동안 이안손는 귀하의 전문가 등록 과정에 제공된 정보나 웹사이트의 전체 혹은 일부 내용을 마케팅 자료로 사용 또는 활용 할 수 있는 권리를 갖습니다. 귀하는 또한 이안손의 요청에 따라 이안손 및 그 계열사와 모든 클레임 또는 소송에 대한 변호 또는 기소에 전적으로 협조한다는 데 동의합니다.
     </S.Description>
 
     <S.Description>
-      <h3>자문료</h3>
+      <h4>자문료</h4>
       <br />
       자문료 자문이 종료된 후 귀하가 이안손에 제공하는 증빙자료는 귀사의 지급일(매달 15일, 말일)에 지급됩니다. 귀하가 제공한 컨설팅 서비스는 진행 시간에 비례하여 지급됨을 인지합니다.
     </S.Description>
 
     <S.Description>
-      <h3>전직 권유 금지</h3>
+      <h4>전직 권유 금지</h4>
       <br />
       귀하는 이안손의 고객은 이안손의 중요한 사업 자산임을 인지합니다. 귀하가 이안손 고객에게 컨설팅 관계를 제공하거나 고용 기회 등을 제공하기 위해서는 사전에 이안손의 서면 승인이 필요하고, 이는 해당 고객과 마지막 컨설팅 서비스 후 6개월이 지나야 합니다.
     </S.Description>
 
     <S.Description>
-      <h3>계약종료</h3>
+      <h4>계약종료</h4>
       <br />
       귀하가 현재 진행중인 자문 서비스를 종료 해야하는 의무에 따라, 귀하는 언제든지 이안손에 통보 후 이안손 전문가 활동을 종료할 수 있습니다.
     </S.Description>
@@ -73,7 +73,7 @@ export default function Terms(): ReturnType<React.FunctionComponent> {
 
   const englishTerms = <S.DescriptionWrapper>
     <S.Description>
-      <h3>ADVISOR COMPLIANCE</h3>
+      <h4>ADVISOR COMPLIANCE</h4>
       <br />
       Please read these Terms and Conditions carefully as this is a legally binding contract between you
       and Liahnson & Company, Inc. (“Liahnson”) and sign by entering your name and the date.
@@ -81,7 +81,7 @@ export default function Terms(): ReturnType<React.FunctionComponent> {
     </S.Description>
 
     <S.Description>
-      <h3>INTRODUCTION OF LIAHNSON</h3>
+      <h4>INTRODUCTION OF LIAHNSON</h4>
       <br />
       Liahnson offers professionals(“Advisors”) from various industries the opportunity to register as
       Liahnson Advisor Members and provide advisory services to Liahnson and/or its clients (collectively, Clients).
@@ -90,7 +90,7 @@ export default function Terms(): ReturnType<React.FunctionComponent> {
     </S.Description>
 
     <S.Description>
-      <h3>RIGHTS OF LIAHNSON ADVISOR MEMBER</h3>
+      <h4>RIGHTS OF LIAHNSON ADVISOR MEMBER</h4>
       <br />
       As a Liahnson Advisor Member, you are free to accept or decline any offer to provide Advisory
       Services in your discretion.
@@ -112,7 +112,7 @@ export default function Terms(): ReturnType<React.FunctionComponent> {
     </S.Description>
 
     <S.Description>
-      <h3>LIAHNSON ADVISOR MEMBER CONDUCT LIAHNSON</h3>
+      <h4>LIAHNSON ADVISOR MEMBER CONDUCT LIAHNSON</h4>
       <br />
       As a guiding principle, Liahnson expects that Liahnson Advisor Members will act with the utmost
       professionalism and courtesy in their activities with Liahnson and its Clients.
@@ -164,7 +164,7 @@ export default function Terms(): ReturnType<React.FunctionComponent> {
     </S.Description>
 
     <S.Description>
-      <h3>CONFIDENTIALITY OF LIAHNSON AND CLIENT INFORMATION</h3>
+      <h4>CONFIDENTIALITY OF LIAHNSON AND CLIENT INFORMATION</h4>
       <br />
       While you are a Liahnson Advisor Member and thereafter, you agree not to disclose or to attempt to
       use or personally benefit from any Restricted Information (as defined below) that is disclosed to or
@@ -179,7 +179,7 @@ export default function Terms(): ReturnType<React.FunctionComponent> {
     </S.Description>
 
     <S.Description>
-      <h3>RELATIONSHIP OF PARTIES</h3>
+      <h4>RELATIONSHIP OF PARTIES</h4>
       <br />
       You acknowledge and agree that you will participate in Advisory Services as an independent
       contractor of Liahnson and, as a result, you agree to comply with all applicable tax withholding and/or
@@ -204,7 +204,7 @@ export default function Terms(): ReturnType<React.FunctionComponent> {
     </S.Description>
 
     <S.Description>
-      <h3>COMPENSATION</h3>
+      <h4>COMPENSATION</h4>
       <br />
       Invoices submitted by the Consultant to Liahnson are due upon payment date which is every 15th and
       last day of each month.
@@ -213,7 +213,7 @@ export default function Terms(): ReturnType<React.FunctionComponent> {
     </S.Description>
 
     <S.Description>
-      <h3>NON-SOLICITATION</h3>
+      <h4>NON-SOLICITATION</h4>
       <br />
       You acknowledge that Liahnson Clients are a valuable business asset to Liahnson.
       Written approval from Liahnson is required before you offer employment or an engagement for the
@@ -223,14 +223,14 @@ export default function Terms(): ReturnType<React.FunctionComponent> {
     </S.Description>
 
     <S.Description>
-      <h3>TERMINATION</h3>
+      <h4>TERMINATION</h4>
       <br />
       Subject to your obligation to complete Advisory Services for which you are engaged, you have the
       right to withdraw from the Liahnson at any time upon notice to Liahnson.
     </S.Description>
 
     <S.Description>
-      <h3>ENTIRE AGREEMENT</h3>
+      <h4>ENTIRE AGREEMENT</h4>
       <br />
       It is agreed that there is no representation, warranty, collateral agreement or condition affecting this Agreement except as expressively provided in this Agreement.
       <br/><br/>
