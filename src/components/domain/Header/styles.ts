@@ -116,8 +116,9 @@ const LinkItem = styled(NavLink) <{ theme?: string }>`
     theme === 'dark' ? 'var(--color-grey-000)' : 'var(--color-grey-800)'};
 
   &.active {
-    font-weight: 860;
+    font-weight: 700;
     padding-right: -5px;
+    padding-left: 10px;
     /* letter-spacing: -0.1rem; */
   }
   &::before {
@@ -126,7 +127,7 @@ const LinkItem = styled(NavLink) <{ theme?: string }>`
     content: attr(aria-label);
     font-size: 1.9rem;
     padding-right: -5px;
-    font-weight: 860;
+    font-weight: 700;
     visibility: hidden;
     white-space: nowrap;
   }
