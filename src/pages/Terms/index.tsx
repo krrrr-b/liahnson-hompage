@@ -112,7 +112,7 @@ export default function Terms(): ReturnType<React.FunctionComponent> {
     </S.Description>
 
     <S.Description>
-      <h4>LIAHNSON ADVISOR MEMBER CONDUCT LIAHNSON</h4>
+      <h4>LIAHNSON ADVISOR MEMBER CONDUCT</h4>
       <br />
       As a guiding principle, Liahnson expects that Liahnson Advisor Members will act with the utmost
       professionalism and courtesy in their activities with Liahnson and its Clients.
