@@ -93,7 +93,7 @@ const Right = styled.ul<{ isOpen: boolean }>`
 `;
 
 const NavListItem = styled.li`
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 590;
   overflow-wrap: anywhere;
   word-wrap: break-word;
@@ -111,19 +111,22 @@ const NavListItem = styled.li`
 const LinkItem = styled(NavLink) <{ theme?: string }>`
   position: relative;
   display: inline-block;
-  word-wrap: break-word;
-  word-break: break-all;
+  word-wrap: keep-all;
+  padding-right: -5px;
   color: ${({ theme }) =>
     theme === 'dark' ? 'var(--color-grey-000)' : 'var(--color-grey-800)'};
 
   &.active {
     font-weight: 860;
+    padding-right: -5px;
     /* letter-spacing: -0.1rem; */
   }
   &::before {
+    padding-left: 10px;
     position: absolute;
     content: attr(aria-label);
     font-size: 1.9rem;
+    padding-right: -5px;
     font-weight: 860;
     visibility: hidden;
     white-space: nowrap;
@@ -132,16 +135,21 @@ const LinkItem = styled(NavLink) <{ theme?: string }>`
   @media (max-width: 1024px) {
     color: var(--color-grey-800);
     white-space: nowrap;
+    padding-right: -5px;
+    word-break: keep-all;
     &.active {
       color: var(--color-red-500);
       font-weight: 700;
-      font-size: 3.4rem;
+      font-size: 3.2rem;
     }
 
     &::before {
+      padding-left: 10px;
       position: absolute;
+      padding-right: -5px;
+      word-break: keep-all;
       content: attr(aria-label);
-      font-size: 3.4rem;
+      font-size: 3.2rem;
       font-weight: 700;
       visibility: hidden;
       white-space: nowrap;
