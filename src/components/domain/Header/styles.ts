@@ -96,8 +96,7 @@ const NavListItem = styled.li`
   font-size: 2rem;
   font-weight: 590;
   overflow-wrap: anywhere;
-  word-wrap: break-word;
-  word-break: break-all;
+  word-break: keep-all;
 
   ${({ theme }) => css`
     @media (max-width: ${theme.breakpoints.large}) {
@@ -165,14 +164,16 @@ const LinkItemDiv = styled.div<{ theme?: string }>`
     theme === 'dark' ? 'var(--color-grey-000)' : 'var(--color-grey-800)'};
 
   &.active {
-    font-weight: 860;
+    font-weight: 800;
+    font-size: 1.8rem;
+    font-weight: 800;
     /* letter-spacing: -0.1rem; */
   }
   &::before {
     position: absolute;
     content: attr(aria-label);
-    font-size: 2rem;
-    font-weight: 860;
+    font-size: 1.8rem;
+    font-weight: 800;
     visibility: hidden;
     white-space: nowrap;
   }
@@ -182,15 +183,15 @@ const LinkItemDiv = styled.div<{ theme?: string }>`
     white-space: nowrap;
     &.active {
       color: var(--color-red-500);
-      font-weight: 700;
-      font-size: 3.5rem;
+      font-weight: 600;
+      font-size: 3.3rem;
     }
 
     &::before {
       position: absolute;
       content: attr(aria-label);
-      font-size: 3.5rem;
-      font-weight: 700;
+      font-size: 3.3rem;
+      font-weight: 600;
       visibility: hidden;
       white-space: nowrap;
     }
