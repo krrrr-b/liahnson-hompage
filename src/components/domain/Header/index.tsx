@@ -47,7 +47,7 @@ export default function Header(): ReturnType<React.FunctionComponent> {
     const newWidths = tabRefs.current.map(tabRef => {
       if (tabRef) {
         const computedStyle = getComputedStyle(tabRef, '::before');
-        return computedStyle.width;
+        return computedStyle.width + 5;
       }
       return '';
     });
@@ -183,9 +183,7 @@ export default function Header(): ReturnType<React.FunctionComponent> {
                     className={({ isActive }) => (isActive ? 'active' : '')}
                     theme={theme}
                     aria-label={item.label}
-                    onClick={(e) => onClick(e, item.label)}>
-                    {item.label}
-                  </S.LinkItem>
+                    onClick={(e) => onClick(e, item.label)}>{item.label}</S.LinkItem>
                 </S.NavListItem>
               ))}
               {isTablet ? (

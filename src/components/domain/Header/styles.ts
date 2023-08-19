@@ -127,6 +127,7 @@ const LinkItem = styled(NavLink) <{ theme?: string }>`
     font-size: 1.9rem;
     font-weight: 700;
     visibility: hidden;
+    word-wrap: keep-all;
     white-space: nowrap;
   }
 
