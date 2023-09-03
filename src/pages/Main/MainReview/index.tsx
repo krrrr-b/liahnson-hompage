@@ -51,7 +51,7 @@ export default function MainReview(): ReturnType<React.FunctionComponent> {
                 name='Become our Expert'
                 onClick={() => {
                   if (isMobile) {
-                    window.location.href = LINKS.TYPE_FORM_EXPERTS;
+                    window.open(LINKS.TYPE_FORM_EXPERTS, "_blank");
                   } else {
                     window.open(LINKS.TYPE_FORM_EXPERTS, "_blank", "width=1024, height=720; noopener, noreferrer");
                   }

@@ -8,7 +8,7 @@ const Selected = styled.div`
   font-size: 2rem;
   ${({ theme }) => css`
     @media (max-width: ${theme.breakpoints.medium}) {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
   `}
 `;
@@ -41,7 +41,7 @@ const DropdownItem = styled.li<{ hasDropdown: boolean }>`
   justify-content: flex-start;
   width: 100%;
   height: 100%;
-  padding: 1.6rem 2.8rem;
+  padding: 1.6rem 2rem;
   font-size: 2rem;
   font-weight: 700;
   border-radius: 99.9rem;
@@ -55,7 +55,7 @@ const DropdownItem = styled.li<{ hasDropdown: boolean }>`
 
   ${({ theme }) => css`
     @media (max-width: ${theme.breakpoints.medium}) {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
   `}
 `;
